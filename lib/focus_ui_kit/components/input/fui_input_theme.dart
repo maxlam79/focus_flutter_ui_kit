@@ -71,9 +71,9 @@ abstract class FUIInputTheme {
   static const double fontSizeLabelSmall = 12;
   static const double fontSizeLabelMedium = 14;
   static const double fontSizeLabelLarge = 16;
-  static const double fontSizeValueSmall = 11;
-  static const double fontSizeValueMedium = 13;
-  static const double fontSizeValueLarge = 14;
+  static const double fontSizeValueSmall = 12;
+  static const double fontSizeValueMedium = 14;
+  static const double fontSizeValueLarge = 16;
   static const double fontSizeRequired = 14;
   static const double fontSizeStatus = 13;
   static const double fontSizeSelectCatNameSmall = 14;
@@ -98,9 +98,9 @@ abstract class FUIInputTheme {
 
   /// Paddings and Margins
   static const EdgeInsets paddingContainer = EdgeInsets.only(left: 8, right: 8, top: 8);
-  static const EdgeInsets paddingContentSmall = EdgeInsets.only(top: 10, bottom: 10);
-  static const EdgeInsets paddingContentMedium = EdgeInsets.only(top: 10, bottom: 12);
-  static const EdgeInsets paddingContentLarge = EdgeInsets.only(top: 10, bottom: 14);
+  static const EdgeInsets paddingContentSmall = EdgeInsets.only(top: 9, bottom: 11);
+  static const EdgeInsets paddingContentMedium = EdgeInsets.only(top: 9, bottom: 13);
+  static const EdgeInsets paddingContentLarge = EdgeInsets.only(top: 9, bottom: 15);
   static const EdgeInsets paddingSideIconContainer = EdgeInsets.only(right: 13, left: 13);
   static const EdgeInsets paddingMandatoryIndicator = EdgeInsets.only(right: 8);
   static const EdgeInsets paddingSelectIconIndicator = EdgeInsets.only(right: 5);

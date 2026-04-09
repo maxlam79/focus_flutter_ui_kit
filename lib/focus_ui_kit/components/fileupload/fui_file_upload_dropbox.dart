@@ -27,10 +27,11 @@ class FUIFileUploadDropbox extends StatelessWidget {
 
     return borderDashPatternShow
         ? DottedBorder(
-            color: borderDashColor ?? uploadTheme.dropboxBorderColor,
-            dashPattern: FUIFileUploadTheme.dropboxDashPattern,
-            borderType: BorderType.RRect,
-            radius: const Radius.circular(FUIFileUploadTheme.dropboxBorderRadius),
+            options: RoundedRectDottedBorderOptions(
+              color: borderDashColor ?? uploadTheme.dropboxBorderColor,
+              dashPattern: FUIFileUploadTheme.dropboxDashPattern,
+              radius: const Radius.circular(FUIFileUploadTheme.dropboxBorderRadius),
+            ),
             child: _buildCenterContent(),
           )
         : _buildCenterContent();

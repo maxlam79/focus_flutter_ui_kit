@@ -37,9 +37,9 @@ If you love this project, do support its growth:
 
 <a href="https://buymeacoffee.com/maxlam79" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="48"></a>
 
-- Bitcoin (BTC): `bc1q9g26u9ren5nxr47mgpdd9tyk43lr3m5rzemqvf`
-- Ethereum (ETH): `0x35f8Ef291056946C4b58A2E2A6F9eD2168b5121d`
-- Solana (SOL): `7ztFg1HcKbTVthdN6fLs77Gr4g3uNCUAF4g7syqXvBJV`
+- Bitcoin (BTC): `bc1qyggan7tssdzvtt55tdlchjnr0zyy5actzwslf8`
+- Ethereum (ETH): `0xBC774bF2d0C2ce421650Bf8F47D64BB7cdA2d99A`
+- Solana (SOL): `5okJqyj6N5BWhVhsEGn4torqenxaynU7TVWRiwBeG19L`
 
 ## Other resources
 ### Starter Kit

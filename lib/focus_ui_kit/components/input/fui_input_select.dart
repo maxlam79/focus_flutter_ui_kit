@@ -206,7 +206,13 @@ class _FUIInputSelectState extends State<FUIInputSelect> with FUIInputMixin, FUI
 
   _initData() {
     dataList = widget.dataList;
-    selectedDataList = widget.selectedDataList;
+
+    if (widget.selectedDataList != null && widget.selectedDataList!.isNotEmpty) {
+      selectedDataList = widget.selectedDataList;
+    } else {
+      selectedDataList = null;
+    }
+
     // isMultiSelect = widget.isMultiSelect;
     isMultiSelect = false;
 
@@ -325,7 +331,8 @@ class _FUIInputSelectState extends State<FUIInputSelect> with FUIInputMixin, FUI
         child: AnimatedOpacity(
           duration: widget.enableOpacityAniDuration ?? FUIInputTheme.enableOpacityAniDuration,
           curve: widget.enableOpacityAniCurve ?? FUIInputTheme.enableOpacityAniCurve,
-          opacity: isEnabled ? FUIInputTheme.enableOpacityNormal : FUIInputTheme.enableOpacityDisabled,
+          opacity:
+              isEnabled ? FUIInputTheme.enableOpacityNormal : FUIInputTheme.enableOpacityDisabled,
           child: FUIColumn(
             children: [
               inputFieldContainer,
@@ -377,7 +384,8 @@ class _FUIInputSelectState extends State<FUIInputSelect> with FUIInputMixin, FUI
         inputHint = fuiInputTheme.tsHintSmall;
         inputValue = fuiInputTheme.tsSelectValueSmall;
         inputFieldSelectCategoryItemOverlay = fuiInputTheme.tsSelectCategoryItemOverlaySmall;
-        inputSelectCategoryItemOverlaySelected = fuiInputTheme.tsSelectCategoryItemOverlaySelectedSmall;
+        inputSelectCategoryItemOverlaySelected =
+            fuiInputTheme.tsSelectCategoryItemOverlaySelectedSmall;
         inputSelectCategoryName = fuiInputTheme.tsSelectCatNameSmall;
         inputSelectCategoryNameModal = fuiInputTheme.tsSelectCategoryNameModalSmall;
         break;
@@ -385,7 +393,8 @@ class _FUIInputSelectState extends State<FUIInputSelect> with FUIInputMixin, FUI
         inputHint = fuiInputTheme.tsHintLarge;
         inputValue = fuiInputTheme.tsSelectValueLarge;
         inputFieldSelectCategoryItemOverlay = fuiInputTheme.tsSelectCategoryItemOverlayLarge;
-        inputSelectCategoryItemOverlaySelected = fuiInputTheme.tsSelectCategoryItemOverlaySelectedLarge;
+        inputSelectCategoryItemOverlaySelected =
+            fuiInputTheme.tsSelectCategoryItemOverlaySelectedLarge;
         inputSelectCategoryName = fuiInputTheme.tsSelectCatNameLarge;
         inputSelectCategoryNameModal = fuiInputTheme.tsSelectCategoryNameModalLarge;
         break;
@@ -394,7 +403,8 @@ class _FUIInputSelectState extends State<FUIInputSelect> with FUIInputMixin, FUI
         inputHint = fuiInputTheme.tsHintMedium;
         inputValue = fuiInputTheme.tsSelectValueMedium;
         inputFieldSelectCategoryItemOverlay = fuiInputTheme.tsSelectCategoryItemOverlayMedium;
-        inputSelectCategoryItemOverlaySelected = fuiInputTheme.tsSelectCategoryItemOverlaySelectedMedium;
+        inputSelectCategoryItemOverlaySelected =
+            fuiInputTheme.tsSelectCategoryItemOverlaySelectedMedium;
         inputSelectCategoryName = fuiInputTheme.tsSelectCatNameMedium;
         inputSelectCategoryNameModal = fuiInputTheme.tsSelectCategoryNameModalMedium;
         break;
@@ -549,12 +559,14 @@ class _FUIInputSelectState extends State<FUIInputSelect> with FUIInputMixin, FUI
       searchEmptyInfoOverlaySettings: SearchEmptyInfoOverlaySettings(
         textStyle: inputHint,
       ),
-      listDataViewOverlaySettings: ListDataViewOverlaySettings(thumbColor: discernColorByScheme(context, fuiColorScheme: widget.fuiColorScheme)),
+      listDataViewOverlaySettings: ListDataViewOverlaySettings(
+          thumbColor: discernColorByScheme(context, fuiColorScheme: widget.fuiColorScheme)),
       categoryNameOverlaySettings: CategoryNameOverlaySettings(
         constraints: const BoxConstraints(minHeight: 27),
         textStyle: inputSelectCategoryName,
         defaultDecoration: const BoxDecoration(color: Colors.transparent),
-        hoverDecoration: BoxDecoration(color: discernColorByScheme(context, fuiColorScheme: widget.fuiColorScheme)),
+        hoverDecoration: BoxDecoration(
+            color: discernColorByScheme(context, fuiColorScheme: widget.fuiColorScheme)),
       ),
       categoryItemOverlaySettings: CategoryItemOverlaySettings(
         constraints: const BoxConstraints(minHeight: 35),
@@ -576,7 +588,8 @@ class _FUIInputSelectState extends State<FUIInputSelect> with FUIInputMixin, FUI
           decoration: BoxDecoration(
             color: Colors.transparent,
             borderRadius: BorderRadius.circular(16),
-            border: Border.all(color: discernColorByScheme(context, fuiColorScheme: widget.fuiColorScheme)),
+            border: Border.all(
+                color: discernColorByScheme(context, fuiColorScheme: widget.fuiColorScheme)),
           ),
           child: Row(
             mainAxisSize: MainAxisSize.min,
@@ -615,7 +628,8 @@ class _FUIInputSelectState extends State<FUIInputSelect> with FUIInputMixin, FUI
         padding: EdgeInsets.zero,
         textStyle: inputValue,
         // showExtraInfo: widget.extraInfoInDropdown,
-        showExtraInfo: false, // can't afford to have widget.extraInfoInSingleSelect because of height.
+        showExtraInfo: false,
+        // can't afford to have widget.extraInfoInSingleSelect because of height.
         showAvatar: widget.avatarInSingleSelect,
       ),
       scrollController: widget.scrollController,
@@ -693,7 +707,8 @@ class _FUIInputSelectState extends State<FUIInputSelect> with FUIInputMixin, FUI
         buttonDecoration: const BoxDecoration(
           color: Colors.transparent,
         ),
-        textStyle: inputTheme.tsSelectModalDoneButton.copyWith(color: discernColorByScheme(context, fuiColorScheme: widget.fuiColorScheme)),
+        textStyle: inputTheme.tsSelectModalDoneButton
+            .copyWith(color: discernColorByScheme(context, fuiColorScheme: widget.fuiColorScheme)),
       ),
       selectOverloadInfoSettings: SelectOverloadInfoSettings(
         // For Mobile

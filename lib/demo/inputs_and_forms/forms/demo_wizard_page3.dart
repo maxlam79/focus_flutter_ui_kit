@@ -361,7 +361,7 @@ class _DemoWizardPage3State extends State<DemoWizardPage3> {
 
   _loadGeoStates() {
     var countryCode = widget.wizardForm.geoCountryField.value;
-    var jsonFile = 'assets/demo-data/geo-state-$countryCode.json';
+    var jsonFile = 'demo-data/geo-state-$countryCode.json';
 
     geoStateFieldCtrl.trigger(FUIInputFieldSelectEvent(
       enabled: false,

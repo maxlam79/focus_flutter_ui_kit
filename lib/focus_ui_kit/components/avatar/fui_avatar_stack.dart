@@ -20,7 +20,6 @@ class FUIAvatarStack extends StatelessWidget with FUIColorMixin {
     this.infoWidgetBuilder,
     this.width,
     this.height,
-
   }) : super(key: key ?? UniqueKey());
 
   @override
@@ -35,7 +34,7 @@ class FUIAvatarStack extends StatelessWidget with FUIColorMixin {
         );
 
     final infoWidgetBuilder = this.infoWidgetBuilder ??
-        (int surplus) => BorderedCircleAvatar(
+        (int surplus, BuildContext context) => BorderedCircleAvatar(
               backgroundColor: backgroundColor,
               border: BorderSide(
                 color: backgroundColor,
@@ -54,8 +53,6 @@ class FUIAvatarStack extends StatelessWidget with FUIColorMixin {
                 ),
               ),
             );
-
-
 
     return SizedBox(
       height: height,

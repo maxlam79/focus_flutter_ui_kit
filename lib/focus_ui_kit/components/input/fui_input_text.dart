@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -290,7 +291,8 @@ class _FUIInputTextState extends State<FUIInputText> with FUIInputMixin, FUIColo
         child: AnimatedOpacity(
           duration: widget.enableOpacityAniDuration ?? FUIInputTheme.enableOpacityAniDuration,
           curve: widget.enableOpacityAniCurve ?? FUIInputTheme.enableOpacityAniCurve,
-          opacity: isEnabled ? FUIInputTheme.enableOpacityNormal : FUIInputTheme.enableOpacityDisabled,
+          opacity:
+              isEnabled ? FUIInputTheme.enableOpacityNormal : FUIInputTheme.enableOpacityDisabled,
           child: FUIColumn(
             children: [
               inputFieldContainer,
@@ -369,7 +371,8 @@ class _FUIInputTextState extends State<FUIInputText> with FUIInputMixin, FUIColo
         cursorWidth: widget.cursorWidth,
         cursorHeight: widget.cursorHeight,
         cursorRadius: widget.cursorRadius,
-        cursorColor: widget.cursorColor ?? discernColorByScheme(context, fuiColorScheme: widget.fuiColorScheme),
+        cursorColor: widget.cursorColor ??
+            discernColorByScheme(context, fuiColorScheme: widget.fuiColorScheme),
         keyboardAppearance: widget.keyboardAppearance,
         scrollPadding: widget.scrollPadding,
         enableInteractiveSelection: widget.enableInteractiveSelection,

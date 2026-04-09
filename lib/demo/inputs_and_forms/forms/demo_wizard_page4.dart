@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:icons_plus/icons_plus.dart';
 import 'package:intl/intl.dart';
+import 'package:logger/logger.dart';
 import 'package:mask_text_input_formatter/mask_text_input_formatter.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 import 'package:select2dot1/select2dot1.dart';
@@ -38,9 +39,13 @@ class _DemoWizardPage4State extends State<DemoWizardPage4> {
   late FUIButtonController prevBtnCtrl;
   late FUIButtonController confirmBtnCtrl;
 
+  late Logger log;
+
   @override
   void initState() {
     super.initState();
+
+    log = Logger();
 
     ccNoFieldCtrl = FUIInputFieldController();
     ccNameFieldCtrl = FUIInputFieldController();
@@ -109,7 +114,8 @@ class _DemoWizardPage4State extends State<DemoWizardPage4> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Visibility(
-                        visible: responsiveValue(context, lg: true, md: false, sm: false, xs: false),
+                        visible:
+                            responsiveValue(context, lg: true, md: false, sm: false, xs: false),
                         child: FUIVDivider(
                           color: fuiColors.shade2,
                         ),
@@ -307,12 +313,14 @@ class _DemoWizardPage4State extends State<DemoWizardPage4> {
       var item = SingleItemCategoryModel(value: v, nameSingleItem: v);
       itemList.add(item);
 
-      if (!widget.wizardForm.ccExpMonthField.isPure && selectedItemList.isEmpty && item.value == widget.wizardForm.ccExpMonthField.value) {
+      if (!widget.wizardForm.ccExpMonthField.isPure &&
+          selectedItemList.isEmpty &&
+          item.value == widget.wizardForm.ccExpMonthField.value) {
         selectedItemList.add(item);
       }
     }
 
-    var modelList = [
+    List<SingleCategoryModel> modelList = [
       SingleCategoryModel(
         singleItemCategoryList: itemList,
       ),
@@ -339,7 +347,9 @@ class _DemoWizardPage4State extends State<DemoWizardPage4> {
       var item = SingleItemCategoryModel(value: '$i', nameSingleItem: '$i');
       itemList.add(item);
 
-      if (!widget.wizardForm.ccExpYearField.isPure && selectedItemList.isEmpty && item.value == widget.wizardForm.ccExpYearField.value) {
+      if (!widget.wizardForm.ccExpYearField.isPure &&
+          selectedItemList.isEmpty &&
+          item.value == widget.wizardForm.ccExpYearField.value) {
         selectedItemList.add(item);
       }
     }
@@ -426,7 +436,8 @@ class _DemoWizardPage4State extends State<DemoWizardPage4> {
     CCExpMonthFieldError? err = widget.wizardForm.ccExpMonthField.validator(value);
 
     if (!widget.wizardForm.ccExpYearField.isPure) {
-      int selectedMthYear = int.parse('${widget.wizardForm.ccExpYearField.value}${widget.wizardForm.ccExpMonthField.value}');
+      int selectedMthYear = int.parse(
+          '${widget.wizardForm.ccExpYearField.value}${widget.wizardForm.ccExpMonthField.value}');
 
       if (selectedMthYear <= currMthYear) {
         err = CCExpMonthFieldError.invalid;
@@ -466,7 +477,8 @@ class _DemoWizardPage4State extends State<DemoWizardPage4> {
     CCExpYearFieldError? err = widget.wizardForm.ccExpYearField.validator(value);
 
     if (!widget.wizardForm.ccExpMonthField.isPure) {
-      int selectedMthYear = int.parse('${widget.wizardForm.ccExpYearField.value}${widget.wizardForm.ccExpMonthField.value}');
+      int selectedMthYear = int.parse(
+          '${widget.wizardForm.ccExpYearField.value}${widget.wizardForm.ccExpMonthField.value}');
 
       if (selectedMthYear <= currMthYear) {
         err = CCExpYearFieldError.invalid;

@@ -118,7 +118,7 @@ class _DemoInputFileUploadState extends State<DemoInputFileUpload> {
         dzvCtrl.pickFiles(multiple: true).then((htmlFileList) {
           _readHtmlFileList(htmlFileList);
         });
-            },
+      },
       child: SizedBox(
         height: FUIFileUploadTheme.dropboxHeight,
         child: Stack(
@@ -143,7 +143,7 @@ class _DemoInputFileUploadState extends State<DemoInputFileUpload> {
   _buildFileSelectMobileApp() {
     return GestureDetector(
       onTap: () async {
-        FilePickerResult? result = await FilePicker.platform.pickFiles(allowMultiple: true);
+        FilePickerResult? result = await FilePicker.pickFiles(allowMultiple: true);
 
         if (result != null) {
           _readDartIOFileList(result.files);

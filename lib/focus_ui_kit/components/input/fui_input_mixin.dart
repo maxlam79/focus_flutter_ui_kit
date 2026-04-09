@@ -52,7 +52,8 @@ mixin FUIInputMixin {
       // Absorb
     }
 
-    textEditingController = widget.textEditingController ?? TextEditingController(text: initialValue);
+    textEditingController =
+        widget.textEditingController ?? TextEditingController(text: initialValue);
     textEditingController.addListener(() {
       discernTitleResize(widget);
     });
@@ -92,7 +93,8 @@ mixin FUIInputMixin {
       if (focusNode.hasFocus) {
         // Happens only for 1st time focus
         if (!isFocused && widget.selectAllOnFocus) {
-          textEditingController.selection = TextSelection(baseOffset: 0, extentOffset: textEditingController.value.text.length);
+          textEditingController.selection =
+              TextSelection(baseOffset: 0, extentOffset: textEditingController.value.text.length);
         }
 
         isFocused = true;
@@ -229,16 +231,12 @@ mixin FUIInputMixin {
           hintStyle = fuiInputTheme.tsHintSmall;
           contentPadding = FUIInputTheme.paddingContentSmall;
           break;
-        case FUIInputSize.medium:
-          textStyle = fuiInputTheme.tsValueMedium;
-          hintStyle = fuiInputTheme.tsHintMedium;
-          contentPadding = FUIInputTheme.paddingContentMedium;
-          break;
         case FUIInputSize.large:
           textStyle = fuiInputTheme.tsValueLarge;
           hintStyle = fuiInputTheme.tsHintLarge;
           contentPadding = FUIInputTheme.paddingContentLarge;
           break;
+        case FUIInputSize.medium:
         default:
           textStyle = fuiInputTheme.tsValueMedium;
           hintStyle = fuiInputTheme.tsHintMedium;
