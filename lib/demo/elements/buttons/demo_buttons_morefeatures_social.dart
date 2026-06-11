@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:icons_plus/icons_plus.dart';
+import 'package:line_awesome_flutter/line_awesome_flutter.dart';
 
 import '../../../focus_ui_kit/exports.dart';
 
@@ -20,12 +20,12 @@ class DemoButtonsMoreFeaturesSocial extends StatelessWidget {
             spacing: 8,
             runSpacing: 8,
             children: [
-              FUIButtonBlockCircleIcon(icon: const Icon(LineAwesome.facebook, color: Colors.white), backgroundColor: Color(0xff4267B2), onPressed: () {}),
-              FUIButtonBlockCircleIcon(icon: const Icon(LineAwesome.instagram, color: Colors.white), backgroundColor: Color(0xffba308c), onPressed: () {}),
-              FUIButtonBlockCircleIcon(icon: const Icon(LineAwesome.twitter, color: Colors.white), backgroundColor: Color(0xff1dadeb), onPressed: () {}),
-              FUIButtonBlockCircleIcon(icon: const Icon(LineAwesome.linkedin, color: Colors.white), backgroundColor: Color(0xff127cb3), onPressed: () {}),
-              FUIButtonBlockCircleIcon(icon: const Icon(LineAwesome.pinterest, color: Colors.white), backgroundColor: Color(0xffc9232d), onPressed: () {}),
-              FUIButtonBlockCircleIcon(icon: const Icon(LineAwesome.github, color: Colors.white), backgroundColor: Color(0xff000000), onPressed: () {}),
+              FUIButtonBlockCircleIcon(icon: const Icon(LineAwesomeIcons.facebook, color: Colors.white), backgroundColor: Color(0xff4267B2), onPressed: () {}),
+              FUIButtonBlockCircleIcon(icon: const Icon(LineAwesomeIcons.instagram, color: Colors.white), backgroundColor: Color(0xffba308c), onPressed: () {}),
+              FUIButtonBlockCircleIcon(icon: const Icon(LineAwesomeIcons.twitter, color: Colors.white), backgroundColor: Color(0xff1dadeb), onPressed: () {}),
+              FUIButtonBlockCircleIcon(icon: const Icon(LineAwesomeIcons.linkedin, color: Colors.white), backgroundColor: Color(0xff127cb3), onPressed: () {}),
+              FUIButtonBlockCircleIcon(icon: const Icon(LineAwesomeIcons.pinterest, color: Colors.white), backgroundColor: Color(0xffc9232d), onPressed: () {}),
+              FUIButtonBlockCircleIcon(icon: const Icon(LineAwesomeIcons.github, color: Colors.white), backgroundColor: Color(0xff000000), onPressed: () {}),
             ],
           ),
           FUISpacer.vSpace10,
@@ -36,12 +36,12 @@ class DemoButtonsMoreFeaturesSocial extends StatelessWidget {
             spacing: 8,
             runSpacing: 8,
             children: [
-              FUIButtonOutlinedCircleIcon(icon: const Icon(LineAwesome.facebook, color: Color(0xff4267B2)), onPressed: () {}),
-              FUIButtonOutlinedCircleIcon(icon: const Icon(LineAwesome.instagram, color: Color(0xffba308c)), onPressed: () {}),
-              FUIButtonOutlinedCircleIcon(icon: const Icon(LineAwesome.twitter, color: Color(0xff1dadeb)), onPressed: () {}),
-              FUIButtonOutlinedCircleIcon(icon: const Icon(LineAwesome.linkedin, color: Color(0xff127cb3)), onPressed: () {}),
-              FUIButtonOutlinedCircleIcon(icon: const Icon(LineAwesome.pinterest, color: Color(0xffc9232d)), onPressed: () {}),
-              FUIButtonOutlinedCircleIcon(icon: const Icon(LineAwesome.github, color: Color(0xff000000)), onPressed: () {}),
+              FUIButtonOutlinedCircleIcon(icon: const Icon(LineAwesomeIcons.facebook, color: Color(0xff4267B2)), onPressed: () {}),
+              FUIButtonOutlinedCircleIcon(icon: const Icon(LineAwesomeIcons.instagram, color: Color(0xffba308c)), onPressed: () {}),
+              FUIButtonOutlinedCircleIcon(icon: const Icon(LineAwesomeIcons.twitter, color: Color(0xff1dadeb)), onPressed: () {}),
+              FUIButtonOutlinedCircleIcon(icon: const Icon(LineAwesomeIcons.linkedin, color: Color(0xff127cb3)), onPressed: () {}),
+              FUIButtonOutlinedCircleIcon(icon: const Icon(LineAwesomeIcons.pinterest, color: Color(0xffc9232d)), onPressed: () {}),
+              FUIButtonOutlinedCircleIcon(icon: const Icon(LineAwesomeIcons.github, color: Color(0xff000000)), onPressed: () {}),
             ],
           ),
         ],

@@ -4,8 +4,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:graphic/graphic.dart';
-import 'package:icons_plus/icons_plus.dart';
 import 'package:intl/intl.dart';
+import 'package:line_awesome_flutter/line_awesome_flutter.dart';
 import 'package:lottie/lottie.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
@@ -37,7 +37,8 @@ class DemoWidgetFinance07 extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    H3(Text('1.7259', style: TextStyle(color: fuiColors.primary)), padding: EdgeInsets.zero),
+                    H3(Text('1.7259', style: TextStyle(color: fuiColors.primary)),
+                        padding: EdgeInsets.zero),
                     Regular(
                         Text(
                           'CURRENT RATIO',
@@ -53,7 +54,8 @@ class DemoWidgetFinance07 extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    H3(Text('4.31%', style: TextStyle(color: fuiColors.primary)), padding: EdgeInsets.zero),
+                    H3(Text('4.31%', style: TextStyle(color: fuiColors.primary)),
+                        padding: EdgeInsets.zero),
                     Regular(
                         Text(
                           'LONG TERM DEBT / CAPITAL',
@@ -74,7 +76,8 @@ class DemoWidgetFinance07 extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    H3(Text('18.2489', style: TextStyle(color: fuiColors.primary)), padding: EdgeInsets.zero),
+                    H3(Text('18.2489', style: TextStyle(color: fuiColors.primary)),
+                        padding: EdgeInsets.zero),
                     Regular(
                         Text(
                           'GROSS MARGIN',
@@ -90,7 +93,8 @@ class DemoWidgetFinance07 extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    H3(Text('9.1875', style: TextStyle(color: fuiColors.primary)), padding: EdgeInsets.zero),
+                    H3(Text('9.1875', style: TextStyle(color: fuiColors.primary)),
+                        padding: EdgeInsets.zero),
                     Regular(
                         Text(
                           'OPERATING MARGIN',
@@ -111,7 +115,10 @@ class DemoWidgetFinance07 extends StatelessWidget {
       footerShow: true,
       footerSeparator: true,
       footerButtons: [
-        FUIButtonBlockTextIcon(icon: Icon(LineAwesome.search_plus_solid), text: Text('Details'), onPressed: () {}),
+        FUIButtonBlockTextIcon(
+            icon: Icon(LineAwesomeIcons.search_plus_solid),
+            text: Text('Details'),
+            onPressed: () {}),
       ],
     );
   }
@@ -122,7 +129,7 @@ class DemoWidgetFinance07 extends StatelessWidget {
     var mdList = [
       FUIButtonLinkIcon(
         icon: Icon(
-          LineAwesome.external_link_alt_solid,
+          LineAwesomeIcons.external_link_alt_solid,
           size: FUIPanelTheme.headerIconButtonSize,
           color: panelTheme.headerIconButtonColor,
         ),
@@ -130,7 +137,7 @@ class DemoWidgetFinance07 extends StatelessWidget {
       ),
       FUIButtonLinkIcon(
         icon: Icon(
-          LineAwesome.sync_alt_solid,
+          LineAwesomeIcons.sync_alt_solid,
           size: FUIPanelTheme.headerIconButtonSize,
           color: panelTheme.headerIconButtonColor,
         ),
@@ -142,11 +149,11 @@ class DemoWidgetFinance07 extends StatelessWidget {
       FUIPopupMenuIconButton(fuiPopupMenuItemList: [
         FUIPopupMenuItem(
           label: Text('Explore'),
-          icon: Icon(LineAwesome.external_link_alt_solid),
+          icon: Icon(LineAwesomeIcons.external_link_alt_solid),
         ),
         FUIPopupMenuItem(
           label: Text('Refresh'),
-          icon: Icon(LineAwesome.sync_alt_solid),
+          icon: Icon(LineAwesomeIcons.sync_alt_solid),
         ),
       ])
     ];
@@ -209,7 +216,11 @@ class DemoWidgetFinance07 extends StatelessWidget {
                 ],
                 selections: {
                   'touchMove': PointSelection(
-                    on: {GestureType.scaleUpdate, GestureType.tapDown, GestureType.longPressMoveUpdate},
+                    on: {
+                      GestureType.scaleUpdate,
+                      GestureType.tapDown,
+                      GestureType.longPressMoveUpdate
+                    },
                     dim: Dim.x,
                     variable: 'period',
                   )

@@ -1,6 +1,7 @@
 import 'package:color_shade/color_shade.dart';
 import 'package:flutter/material.dart';
-import 'package:icons_plus/icons_plus.dart';
+import 'package:flutter_boxicons/flutter_boxicons.dart';
+import 'package:line_awesome_flutter/line_awesome_flutter.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 import 'package:step_progress_indicator/step_progress_indicator.dart';
 
@@ -40,7 +41,7 @@ class DemoWidgetBusiness02 extends StatelessWidget {
     var mdList = [
       FUIButtonLinkIcon(
         icon: Icon(
-          LineAwesome.external_link_alt_solid,
+          LineAwesomeIcons.external_link_alt_solid,
           size: FUIPanelTheme.headerIconButtonSize,
           color: panelTheme.headerIconButtonColor,
         ),
@@ -48,7 +49,7 @@ class DemoWidgetBusiness02 extends StatelessWidget {
       ),
       FUIButtonLinkIcon(
         icon: Icon(
-          LineAwesome.sync_alt_solid,
+          LineAwesomeIcons.sync_alt_solid,
           size: FUIPanelTheme.headerIconButtonSize,
           color: panelTheme.headerIconButtonColor,
         ),
@@ -60,11 +61,11 @@ class DemoWidgetBusiness02 extends StatelessWidget {
       FUIPopupMenuIconButton(fuiPopupMenuItemList: [
         FUIPopupMenuItem(
           label: Text('Explore'),
-          icon: Icon(LineAwesome.external_link_alt_solid),
+          icon: Icon(LineAwesomeIcons.external_link_alt_solid),
         ),
         FUIPopupMenuItem(
           label: Text('Refresh'),
-          icon: Icon(LineAwesome.sync_alt_solid),
+          icon: Icon(LineAwesomeIcons.sync_alt_solid),
         ),
       ])
     ];
@@ -181,7 +182,7 @@ class DemoWidgetBusiness02 extends StatelessWidget {
                     children: [
                       Padding(
                         padding: const EdgeInsets.only(top: 7),
-                        child: Icon(BoxIcons.bx_category_alt, size: typoTheme.h2.fontSize),
+                        child: Icon(Boxicons.bx_category_alt, size: typoTheme.h2.fontSize),
                       ),
                       FUISpacer.hSpace10,
                       SizedBox(

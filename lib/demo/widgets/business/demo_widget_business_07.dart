@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:icons_plus/icons_plus.dart';
+import 'package:flutter_boxicons/flutter_boxicons.dart';
+import 'package:line_awesome_flutter/line_awesome_flutter.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
 import '../../../focus_ui_kit/exports.dart';
@@ -37,7 +38,7 @@ class DemoWidgetBusiness07 extends StatelessWidget {
     var mdList = [
       FUIButtonLinkIcon(
         icon: Icon(
-          LineAwesome.external_link_alt_solid,
+          LineAwesomeIcons.external_link_alt_solid,
           size: FUIPanelTheme.headerIconButtonSize,
           color: panelTheme.headerIconButtonColor,
         ),
@@ -45,7 +46,7 @@ class DemoWidgetBusiness07 extends StatelessWidget {
       ),
       FUIButtonLinkIcon(
         icon: Icon(
-          LineAwesome.sync_alt_solid,
+          LineAwesomeIcons.sync_alt_solid,
           size: FUIPanelTheme.headerIconButtonSize,
           color: panelTheme.headerIconButtonColor,
         ),
@@ -57,11 +58,11 @@ class DemoWidgetBusiness07 extends StatelessWidget {
       FUIPopupMenuIconButton(fuiPopupMenuItemList: [
         FUIPopupMenuItem(
           label: Text('Explore'),
-          icon: Icon(LineAwesome.external_link_alt_solid),
+          icon: Icon(LineAwesomeIcons.external_link_alt_solid),
         ),
         FUIPopupMenuItem(
           label: Text('Refresh'),
-          icon: Icon(LineAwesome.sync_alt_solid),
+          icon: Icon(LineAwesomeIcons.sync_alt_solid),
         ),
       ])
     ];
@@ -75,19 +76,19 @@ class DemoWidgetBusiness07 extends StatelessWidget {
       children: [
         FUITooltip(
           tooltip: Text('Company QR'),
-          child: FUIButtonOutlinedCircleIcon(fuiButtonSize: FUIButtonSize.large, icon: Icon(BoxIcons.bx_qr), onPressed: () {}),
+          child: FUIButtonOutlinedCircleIcon(fuiButtonSize: FUIButtonSize.large, icon: Icon(Boxicons.bx_qr), onPressed: () {}),
         ),
         FUITooltip(
           tooltip: Text('Company Website'),
-          child: FUIButtonOutlinedCircleIcon(fuiButtonSize: FUIButtonSize.large, icon: Icon(BoxIcons.bx_link_external), onPressed: () {}),
+          child: FUIButtonOutlinedCircleIcon(fuiButtonSize: FUIButtonSize.large, icon: Icon(Boxicons.bx_link_external), onPressed: () {}),
         ),
         FUITooltip(
           tooltip: Text('Call Directly'),
-          child: FUIButtonOutlinedCircleIcon(fuiButtonSize: FUIButtonSize.large, icon: Icon(BoxIcons.bx_phone), onPressed: () {}),
+          child: FUIButtonOutlinedCircleIcon(fuiButtonSize: FUIButtonSize.large, icon: Icon(Boxicons.bx_phone), onPressed: () {}),
         ),
         FUITooltip(
           tooltip: Text('Update'),
-          child: FUIButtonOutlinedCircleIcon(fuiButtonSize: FUIButtonSize.large, icon: Icon(BoxIcons.bx_edit), onPressed: () {}),
+          child: FUIButtonOutlinedCircleIcon(fuiButtonSize: FUIButtonSize.large, icon: Icon(Boxicons.bx_edit), onPressed: () {}),
         ),
       ],
     );

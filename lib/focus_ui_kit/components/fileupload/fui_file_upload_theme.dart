@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:icons_plus/icons_plus.dart';
+import 'package:line_awesome_flutter/line_awesome_flutter.dart';
 
 import '../../exports.dart';
 
@@ -8,7 +8,7 @@ abstract class FUIFileUploadTheme {
   static const double dropboxBorderRadius = 10;
   static const double dropboxHeight = 200;
   static const List<double> dropboxDashPattern = [6, 3];
-  static const IconData dropboxUploadIcon = LineAwesome.cloud_upload_alt_solid;
+  static const IconData dropboxUploadIcon = LineAwesomeIcons.cloud_upload_alt_solid;
   static const String dropboxUploadText = 'Drag & drop your files to upload or \'click/tap\' to select the files';
   static const EdgeInsets dropboxUploadTextPadding = EdgeInsets.all(10);
 
@@ -23,7 +23,7 @@ abstract class FUIFileUploadTheme {
   static const double itemTsLine1FontSize = 12;
   static const double itemTsLine2FontSize = 11;
   static const double itemTsLine3FontSize = 11;
-  static const IconData itemFileIcon = LineAwesome.file;
+  static const IconData itemFileIcon = LineAwesomeIcons.file;
   static const double itemFileIconSize = 28;
 
   /// Colors

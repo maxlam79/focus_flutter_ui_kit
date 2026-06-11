@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:icons_plus/icons_plus.dart';
+import 'package:line_awesome_flutter/line_awesome_flutter.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -151,28 +151,28 @@ class DemoScaffoldBottom02 extends StatelessWidget {
             children: [
               FUIButtonLinkIcon(
                 icon: Icon(
-                  LineAwesome.facebook,
+                  LineAwesomeIcons.facebook,
                   color: fuiColors.shade2,
                 ),
                 onPressed: () {},
               ),
               FUIButtonLinkIcon(
                 icon: Icon(
-                  LineAwesome.pinterest,
+                  LineAwesomeIcons.pinterest,
                   color: fuiColors.shade2,
                 ),
                 onPressed: () {},
               ),
               FUIButtonLinkIcon(
                 icon: Icon(
-                  LineAwesome.youtube,
+                  LineAwesomeIcons.youtube,
                   color: fuiColors.shade2,
                 ),
                 onPressed: () {},
               ),
               FUIButtonLinkIcon(
                 icon: Icon(
-                  LineAwesome.github,
+                  LineAwesomeIcons.github,
                   color: fuiColors.shade2,
                 ),
                 onPressed: () {},

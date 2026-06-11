@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:icons_plus/icons_plus.dart';
+import 'package:line_awesome_flutter/line_awesome_flutter.dart';
 
 abstract class FUISpinnerTheme {
   /// Sizes
-  static const IconData defaultIcon = LineAwesome.circle_notch_solid;
+  static const IconData defaultIcon = LineAwesomeIcons.circle_notch_solid;
   static const double defaultSize = 30;
   static const EdgeInsets padding = EdgeInsets.all(10);
 

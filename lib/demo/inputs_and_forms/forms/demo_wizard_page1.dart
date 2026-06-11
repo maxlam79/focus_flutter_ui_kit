@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:icons_plus/icons_plus.dart';
+import 'package:line_awesome_flutter/line_awesome_flutter.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 import 'package:select2dot1/select2dot1.dart';
 
@@ -112,7 +112,8 @@ class _DemoWizardPage1State extends State<DemoWizardPage1> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Visibility(
-                        visible: responsiveValue(context, lg: true, md: false, sm: false, xs: false),
+                        visible:
+                            responsiveValue(context, lg: true, md: false, sm: false, xs: false),
                         child: FUIVDivider(
                           color: fuiColors.shade2,
                         ),
@@ -136,13 +137,14 @@ class _DemoWizardPage1State extends State<DemoWizardPage1> {
       child: FUIColumn(
         children: [
           const Icon(
-            LineAwesome.user,
+            LineAwesomeIcons.user,
             size: 65,
           ),
           FUISpacer.vSpace10,
           H3(const Text('Customer Info')),
           FUISpacer.vSpace5,
-          Regular(const Text('Please fill in your personal details. Your information will be securely stored, adhering to our data privacy policy.'))
+          Regular(const Text(
+              'Please fill in your personal details. Your information will be securely stored, adhering to our data privacy policy.'))
         ],
       ),
     );
@@ -294,7 +296,8 @@ class _DemoWizardPage1State extends State<DemoWizardPage1> {
             var dialCode = data['dial_code'];
             var countryCode = data['code'];
 
-            SingleItemCategoryModel item = SingleItemCategoryModel(value: countryCode, nameSingleItem: '$name ($dialCode)');
+            SingleItemCategoryModel item =
+                SingleItemCategoryModel(value: countryCode, nameSingleItem: '$name ($dialCode)');
             itemList.add(item);
 
             if (widget.wizardForm.countryCodeField.value == countryCode) {

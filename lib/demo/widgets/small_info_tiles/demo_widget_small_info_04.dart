@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:icons_plus/icons_plus.dart';
+import 'package:line_awesome_flutter/line_awesome_flutter.dart';
 
 import '../../../focus_ui_kit/exports.dart';
 
@@ -34,7 +34,7 @@ class DemoWidgetSmallInfo04 extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.only(bottom: 13),
                 child: Icon(
-                  LineAwesome.chart_pie_solid,
+                  LineAwesomeIcons.chart_pie_solid,
                   size: 40,
                 ),
               ),

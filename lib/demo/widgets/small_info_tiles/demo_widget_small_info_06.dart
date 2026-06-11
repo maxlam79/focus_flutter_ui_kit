@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:icons_plus/icons_plus.dart';
+import 'package:line_awesome_flutter/line_awesome_flutter.dart';
 
 import '../../../focus_ui_kit/exports.dart';
 
@@ -26,11 +26,11 @@ class DemoWidgetSmallInfo06 extends StatelessWidget {
       header: Text('TOTAL CAPITALIZATION', style: TextStyle(color: textIconColor)),
       headerIconButtons: [
         FUIButtonLinkIcon(
-          icon: Icon(LineAwesome.external_link_alt_solid, color: textIconColor, size: headerIconTextSize),
+          icon: Icon(LineAwesomeIcons.external_link_alt_solid, color: textIconColor, size: headerIconTextSize),
           onPressed: () {},
         ),
         FUIButtonLinkIcon(
-          icon: Icon(LineAwesome.sync_alt_solid, color: textIconColor, size: headerIconTextSize),
+          icon: Icon(LineAwesomeIcons.sync_alt_solid, color: textIconColor, size: headerIconTextSize),
           onPressed: () {},
         ),
       ],
@@ -51,7 +51,7 @@ class DemoWidgetSmallInfo06 extends StatelessWidget {
               crossAxisAlignment: WrapCrossAlignment.center,
               children: [
                 Text('65,316M', style: typoTheme.h1.copyWith(color: textIconColor, fontSize: mainContentIconTextSize)),
-                Icon(LineAwesome.stream_solid, size: mainContentIconTextSize, color: textIconColor),
+                Icon(LineAwesomeIcons.stream_solid, size: mainContentIconTextSize, color: textIconColor),
               ],
             ),
           ),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:icons_plus/icons_plus.dart';
+import 'package:line_awesome_flutter/line_awesome_flutter.dart';
 
 import '../../../focus_ui_kit/exports.dart';
 
@@ -40,7 +40,7 @@ class DemoWidgetSmallInfo07 extends StatelessWidget {
                   padding: EdgeInsets.only(top: 3),
                   child: Text('OPERATING CASH FLOW', style: panelTheme.headingTitle.copyWith(color: textIconColor)),
                 ),
-                Icon(LineAwesome.chalkboard_solid, color: textIconColor, size: topIconSize),
+                Icon(LineAwesomeIcons.chalkboard_solid, color: textIconColor, size: topIconSize),
               ],
             ),
           ),

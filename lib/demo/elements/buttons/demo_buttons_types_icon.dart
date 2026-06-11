@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:icons_plus/icons_plus.dart';
+import 'package:line_awesome_flutter/line_awesome_flutter.dart';
 
 import '../../../focus_ui_kit/exports.dart';
 
@@ -24,7 +24,7 @@ class DemoButtonsTypesIcon extends StatelessWidget {
             Expanded(
               child: Center(
                 child: FUIButtonLinkIcon(
-                  icon: const Icon(LineAwesome.lightbulb),
+                  icon: const Icon(LineAwesomeIcons.lightbulb),
                   fuiButtonSize: FUIButtonSize.large,
                   onPressed: () {},
                 ),

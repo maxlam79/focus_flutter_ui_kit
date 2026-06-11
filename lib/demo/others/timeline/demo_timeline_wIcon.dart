@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:icons_plus/icons_plus.dart';
+import 'package:line_awesome_flutter/line_awesome_flutter.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 import 'package:timeline_tile/timeline_tile.dart';
 
@@ -21,14 +21,16 @@ class DemoTimeLineWithIcon extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     /// Take note of the responsive content generation for md and above, sm & xs.
-    TimelineAlign responsiveTLAlign = responsiveValue(context, md: TimelineAlign.manual, sm: TimelineAlign.start, xs: TimelineAlign.start);
+    TimelineAlign responsiveTLAlign = responsiveValue(context,
+        md: TimelineAlign.manual, sm: TimelineAlign.start, xs: TimelineAlign.start);
     double? responsiveLineXY = responsiveValue(context, md: lineXY, sm: null, xs: null);
 
     return FUISectionContainer(
       child: FUIColumn(
         children: [
           H2(const Text('With Icon')),
-          Regular(const Text('Indicators can be customized, you may insert an icon button or some other widgets.')),
+          Regular(const Text(
+              'Indicators can be customized, you may insert an icon button or some other widgets.')),
           FUISpacer.vSpace20,
           FUITimelineTile(
             fuiTimelineSize: FUITimelineSize.medium,
@@ -39,7 +41,7 @@ class DemoTimeLineWithIcon extends StatelessWidget {
               indicator: Center(
                   child: FUIButtonBlockCircleIcon(
                 fuiButtonSize: FUIButtonSize.small,
-                icon: const Icon(LineAwesome.check_solid),
+                icon: const Icon(LineAwesomeIcons.check_solid),
                 onPressed: () {},
               )),
               padding: indicatorPadding,
@@ -47,7 +49,8 @@ class DemoTimeLineWithIcon extends StatelessWidget {
               width: indicatorWidth,
             ),
             startChild: _buildStartChildResponsive(context, timelineData.timeline01Date),
-            endChild: _buildEndChildResponsive(context, timelineData.timeline01Date, timelineData.timeline01Content),
+            endChild: _buildEndChildResponsive(
+                context, timelineData.timeline01Date, timelineData.timeline01Content),
           ),
           FUITimelineTile(
             fuiTimelineSize: FUITimelineSize.medium,
@@ -59,7 +62,7 @@ class DemoTimeLineWithIcon extends StatelessWidget {
                   child: FUIButtonBlockCircleIcon(
                 fuiButtonSize: FUIButtonSize.small,
                 fuiColorScheme: FUIColorScheme.secondary,
-                icon: const Icon(LineAwesome.edit),
+                icon: const Icon(LineAwesomeIcons.edit),
                 onPressed: () {},
               )),
               padding: indicatorPadding,
@@ -67,7 +70,8 @@ class DemoTimeLineWithIcon extends StatelessWidget {
               width: indicatorWidth,
             ),
             startChild: _buildStartChildResponsive(context, timelineData.timeline02Date),
-            endChild: _buildEndChildResponsive(context, timelineData.timeline02Date, timelineData.timeline02Content),
+            endChild: _buildEndChildResponsive(
+                context, timelineData.timeline02Date, timelineData.timeline02Content),
           ),
           FUITimelineTile(
             fuiTimelineSize: FUITimelineSize.medium,
@@ -78,7 +82,7 @@ class DemoTimeLineWithIcon extends StatelessWidget {
               indicator: Center(
                   child: FUIButtonBlockCircleIcon(
                 fuiButtonSize: FUIButtonSize.small,
-                icon: const Icon(LineAwesome.search_solid),
+                icon: const Icon(LineAwesomeIcons.search_solid),
                 onPressed: () {},
               )),
               padding: indicatorPadding,
@@ -86,7 +90,8 @@ class DemoTimeLineWithIcon extends StatelessWidget {
               width: indicatorWidth,
             ),
             startChild: _buildStartChildResponsive(context, timelineData.timeline03Date),
-            endChild: _buildEndChildResponsive(context, timelineData.timeline03Date, timelineData.timeline03Content),
+            endChild: _buildEndChildResponsive(
+                context, timelineData.timeline03Date, timelineData.timeline03Content),
           ),
           FUITimelineTile(
             fuiTimelineSize: FUITimelineSize.medium,
@@ -98,7 +103,7 @@ class DemoTimeLineWithIcon extends StatelessWidget {
                   child: FUIButtonBlockCircleIcon(
                 fuiButtonSize: FUIButtonSize.small,
                 fuiColorScheme: FUIColorScheme.secondary,
-                icon: const Icon(LineAwesome.clock),
+                icon: const Icon(LineAwesomeIcons.clock),
                 onPressed: () {},
               )),
               padding: indicatorPadding,
@@ -106,7 +111,8 @@ class DemoTimeLineWithIcon extends StatelessWidget {
               width: indicatorWidth,
             ),
             startChild: _buildStartChildResponsive(context, timelineData.timeline04Date),
-            endChild: _buildEndChildResponsive(context, timelineData.timeline04Date, timelineData.timeline04Content),
+            endChild: _buildEndChildResponsive(
+                context, timelineData.timeline04Date, timelineData.timeline04Content),
           ),
         ],
       ),

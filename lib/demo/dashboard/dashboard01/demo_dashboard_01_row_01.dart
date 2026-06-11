@@ -1,7 +1,8 @@
+import 'package:bootstrap_icons/bootstrap_icons.dart';
 import 'package:color_shade/color_shade.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animator/flutter_animator.dart';
-import 'package:icons_plus/icons_plus.dart';
+import 'package:line_awesome_flutter/line_awesome_flutter.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
 import '../../../focus_ui_kit/exports.dart';
@@ -112,7 +113,7 @@ class DemoDashboard01Row01 extends StatelessWidget {
                   Padding(
                     padding: EdgeInsets.only(bottom: 13),
                     child: Icon(
-                      LineAwesome.coins_solid,
+                      LineAwesomeIcons.coins_solid,
                       size: 40,
                     ),
                   ),
@@ -199,7 +200,7 @@ class DemoDashboard01Row01 extends StatelessWidget {
                   const Padding(
                     padding: EdgeInsets.only(bottom: 13),
                     child: Icon(
-                      LineAwesome.chart_pie_solid,
+                      LineAwesomeIcons.chart_pie_solid,
                       size: 40,
                     ),
                   ),
@@ -239,7 +240,7 @@ class DemoDashboard01Row01 extends StatelessWidget {
         alignment: WrapAlignment.center,
         runAlignment: WrapAlignment.center,
         children: [
-          Icon(Bootstrap.caret_up_fill, size: iconSize, color: commonColor),
+          Icon(BootstrapIcons.caret_up_fill, size: iconSize, color: commonColor),
           Text(textValue, style: TextStyle(fontSize: fontSize, fontWeight: FontWeight.w700, color: commonColor)),
         ],
       ),
@@ -272,7 +273,7 @@ class DemoDashboard01Row01 extends StatelessWidget {
         alignment: WrapAlignment.center,
         runAlignment: WrapAlignment.center,
         children: [
-          Icon(Bootstrap.caret_down_fill, size: iconSize, color: commonColor),
+          Icon(BootstrapIcons.caret_down_fill, size: iconSize, color: commonColor),
           Text(textValue, style: TextStyle(fontSize: fontSize, fontWeight: FontWeight.w700, color: commonColor)),
         ],
       ),

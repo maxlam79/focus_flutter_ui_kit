@@ -1,7 +1,8 @@
+import 'package:bootstrap_icons/bootstrap_icons.dart';
 import 'package:chart_sparkline/chart_sparkline.dart';
 import 'package:color_shade/color_shade.dart';
 import 'package:flutter/material.dart';
-import 'package:icons_plus/icons_plus.dart';
+import 'package:line_awesome_flutter/line_awesome_flutter.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
 import '../../../focus_ui_kit/exports.dart';
@@ -79,7 +80,7 @@ class DemoWidgetFinance02 extends StatelessWidget {
     var mdList = [
       FUIButtonLinkIcon(
         icon: Icon(
-          LineAwesome.external_link_alt_solid,
+          LineAwesomeIcons.external_link_alt_solid,
           size: FUIPanelTheme.headerIconButtonSize,
           color: panelTheme.headerIconButtonColor,
         ),
@@ -87,7 +88,7 @@ class DemoWidgetFinance02 extends StatelessWidget {
       ),
       FUIButtonLinkIcon(
         icon: Icon(
-          LineAwesome.sync_alt_solid,
+          LineAwesomeIcons.sync_alt_solid,
           size: FUIPanelTheme.headerIconButtonSize,
           color: panelTheme.headerIconButtonColor,
         ),
@@ -99,11 +100,11 @@ class DemoWidgetFinance02 extends StatelessWidget {
       FUIPopupMenuIconButton(fuiPopupMenuItemList: [
         FUIPopupMenuItem(
           label: Text('Explore'),
-          icon: Icon(LineAwesome.external_link_alt_solid),
+          icon: Icon(LineAwesomeIcons.external_link_alt_solid),
         ),
         FUIPopupMenuItem(
           label: Text('Refresh'),
-          icon: Icon(LineAwesome.sync_alt_solid),
+          icon: Icon(LineAwesomeIcons.sync_alt_solid),
         ),
       ])
     ];
@@ -123,7 +124,7 @@ class DemoWidgetFinance02 extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Icon(LineAwesome.signal_solid, size: typoTheme.h2.fontSize),
+              Icon(LineAwesomeIcons.signal_solid, size: typoTheme.h2.fontSize),
               FUISpacer.hSpace10,
               Text('Q2 2024', style: typoTheme.h2),
               FUISpacer.hSpace10,
@@ -314,7 +315,7 @@ class DemoWidgetFinance02 extends StatelessWidget {
           alignment: WrapAlignment.center,
           runAlignment: WrapAlignment.center,
           children: [
-            Icon(Bootstrap.caret_up_fill, size: iconSize, color: commonColor),
+            Icon(BootstrapIcons.caret_up_fill, size: iconSize, color: commonColor),
             Text('+13%', style: TextStyle(fontSize: fontSize, fontWeight: FontWeight.w700, color: commonColor)),
           ],
         ),
@@ -351,7 +352,7 @@ class DemoWidgetFinance02 extends StatelessWidget {
           alignment: WrapAlignment.center,
           runAlignment: WrapAlignment.center,
           children: [
-            Icon(Bootstrap.caret_down_fill, size: iconSize, color: commonColor),
+            Icon(BootstrapIcons.caret_down_fill, size: iconSize, color: commonColor),
             Text('+13%', style: TextStyle(fontSize: fontSize, fontWeight: FontWeight.w700, color: commonColor)),
           ],
         ),

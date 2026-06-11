@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:icons_plus/icons_plus.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:intl/intl.dart';
+import 'package:line_awesome_flutter/line_awesome_flutter.dart';
 import 'package:logger/logger.dart';
 import 'package:mask_text_input_formatter/mask_text_input_formatter.dart';
 import 'package:responsive_grid/responsive_grid.dart';
@@ -139,7 +140,7 @@ class _DemoWizardPage4State extends State<DemoWizardPage4> {
       child: FUIColumn(
         children: [
           Icon(
-            LineAwesome.credit_card,
+            LineAwesomeIcons.credit_card,
             size: 65,
           ),
           FUISpacer.vSpace10,
@@ -151,10 +152,10 @@ class _DemoWizardPage4State extends State<DemoWizardPage4> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               FUISpacer.hSpace15,
-              Icon(FontAwesome.cc_visa_brand, size: 25),
-              Icon(FontAwesome.cc_mastercard_brand, size: 25),
-              Icon(FontAwesome.cc_amex_brand, size: 25),
-              Icon(FontAwesome.cc_discover_brand, size: 25),
+              Icon(FontAwesomeIcons.ccVisa.data, size: 25),
+              Icon(FontAwesomeIcons.ccMastercard.data, size: 25),
+              Icon(FontAwesomeIcons.ccAmex.data, size: 25),
+              Icon(FontAwesomeIcons.ccDiscover.data, size: 25),
               FUISpacer.hSpace15,
             ],
           ),

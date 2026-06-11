@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:icons_plus/icons_plus.dart';
+import 'package:line_awesome_flutter/line_awesome_flutter.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
 import '../../../focus_ui_kit/exports.dart';
@@ -88,7 +88,7 @@ class _DemoWizardPage2State extends State<DemoWizardPage2> {
       child: FUIColumn(
         children: [
           const Icon(
-            LineAwesome.shopping_cart_solid,
+            LineAwesomeIcons.shopping_cart_solid,
             size: 65,
           ),
           FUISpacer.vSpace10,

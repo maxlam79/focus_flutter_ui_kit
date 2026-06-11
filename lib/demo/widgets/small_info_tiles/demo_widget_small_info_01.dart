@@ -1,7 +1,7 @@
+import 'package:bootstrap_icons/bootstrap_icons.dart';
 import 'package:color_shade/color_shade.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:icons_plus/icons_plus.dart';
 
 import '../../../focus_ui_kit/exports.dart';
 
@@ -70,7 +70,7 @@ class DemoWidgetSmallInfo01 extends StatelessWidget {
           alignment: WrapAlignment.center,
           runAlignment: WrapAlignment.center,
           children: [
-            Icon(Bootstrap.caret_up_fill, size: iconSize, color: commonColor),
+            Icon(BootstrapIcons.caret_up_fill, size: iconSize, color: commonColor),
             Text('+13%', style: TextStyle(fontSize: fontSize, fontWeight: FontWeight.w700, color: commonColor)),
           ],
         ),

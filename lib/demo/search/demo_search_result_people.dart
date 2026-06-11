@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:icons_plus/icons_plus.dart';
+import 'package:flutter_boxicons/flutter_boxicons.dart';
+import 'package:line_awesome_flutter/line_awesome_flutter.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
 import '../../focus_ui_kit/exports.dart';
@@ -34,14 +35,14 @@ class _DemoSearchResultPeopleState extends State<DemoSearchResultPeople> {
                 FUIButtonBlockCircleIcon(
                   fuiButtonSize: responsiveValue(context, md: FUIButtonSize.medium, sm: FUIButtonSize.small, xs: FUIButtonSize.small),
                   fuiColorScheme: FUIColorScheme.lightGrey,
-                  icon: Icon(BoxIcons.bx_list_ul),
+                  icon: Icon(Boxicons.bx_list_ul),
                   onPressed: () {},
                 ),
                 FUISpacer.hSpace5,
                 FUIButtonBlockCircleIcon(
                   fuiButtonSize: responsiveValue(context, md: FUIButtonSize.medium, sm: FUIButtonSize.small, xs: FUIButtonSize.small),
                   fuiColorScheme: FUIColorScheme.lightGrey,
-                  icon: Icon(BoxIcons.bx_grid_small),
+                  icon: Icon(Boxicons.bx_grid_small),
                   onPressed: () {},
                 ),
               ],
@@ -142,7 +143,7 @@ class _DemoSearchResultPeopleState extends State<DemoSearchResultPeople> {
         headerIconButtons: [
           FUIButtonLinkIcon(
             icon: Icon(
-              LineAwesome.ellipsis_v_solid,
+              LineAwesomeIcons.ellipsis_v_solid,
               size: FUIPanelTheme.headerIconButtonSize,
               color: panelTheme.headerIconButtonColor,
             ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:icons_plus/icons_plus.dart';
+import 'package:flutter_boxicons/flutter_boxicons.dart';
+import 'package:line_awesome_flutter/line_awesome_flutter.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
 import '../../focus_ui_kit/exports.dart';
@@ -28,14 +29,14 @@ class DemoSearchResultDocs extends StatelessWidget {
                 FUIButtonBlockCircleIcon(
                   fuiButtonSize: responsiveValue(context, md: FUIButtonSize.medium, sm: FUIButtonSize.small, xs: FUIButtonSize.small),
                   fuiColorScheme: FUIColorScheme.lightGrey,
-                  icon: const Icon(BoxIcons.bx_list_ul),
+                  icon: const Icon(Boxicons.bx_list_ul),
                   onPressed: () {},
                 ),
                 FUISpacer.hSpace5,
                 FUIButtonBlockCircleIcon(
                   fuiButtonSize: responsiveValue(context, md: FUIButtonSize.medium, sm: FUIButtonSize.small, xs: FUIButtonSize.small),
                   fuiColorScheme: FUIColorScheme.lightGrey,
-                  icon: const Icon(BoxIcons.bx_grid_small),
+                  icon: const Icon(Boxicons.bx_grid_small),
                   onPressed: () {},
                 ),
               ],
@@ -49,31 +50,31 @@ class DemoSearchResultDocs extends StatelessWidget {
               sm: 12,
               md: 6,
               lg: 4,
-              child: _buildDocsResultItem(context, const Icon(LineAwesome.file_pdf), 'legal-2023.pdf', '23/06/24 13:00', 'Author A', '6.03 MB'),
+              child: _buildDocsResultItem(context, const Icon(LineAwesomeIcons.file_pdf), 'legal-2023.pdf', '23/06/24 13:00', 'Author A', '6.03 MB'),
             ),
             ResponsiveGridCol(
               sm: 12,
               md: 6,
               lg: 4,
-              child: _buildDocsResultItem(context, const Icon(LineAwesome.file_word), 'gov-compliance.docx', '02/08/24 12:00', 'Author B', '12.78 MB'),
+              child: _buildDocsResultItem(context, const Icon(LineAwesomeIcons.file_word), 'gov-compliance.docx', '02/08/24 12:00', 'Author B', '12.78 MB'),
             ),
             ResponsiveGridCol(
               sm: 12,
               md: 6,
               lg: 4,
-              child: _buildDocsResultItem(context, const Icon(LineAwesome.file_excel), 'transactions.xlsx', '13/11/23 9:00', 'Author C', '1.08 MB'),
+              child: _buildDocsResultItem(context, const Icon(LineAwesomeIcons.file_excel), 'transactions.xlsx', '13/11/23 9:00', 'Author C', '1.08 MB'),
             ),
             ResponsiveGridCol(
               sm: 12,
               md: 6,
               lg: 4,
-              child: _buildDocsResultItem(context, const Icon(LineAwesome.file_archive), '2023-compilation.zip', '13/11/23 9:00', 'Author D', '27 MB'),
+              child: _buildDocsResultItem(context, const Icon(LineAwesomeIcons.file_archive), '2023-compilation.zip', '13/11/23 9:00', 'Author D', '27 MB'),
             ),
             ResponsiveGridCol(
               sm: 12,
               md: 6,
               lg: 4,
-              child: _buildDocsResultItem(context, const Icon(LineAwesome.file_powerpoint), 'consulting.ppt', '28/07/21 15:00', 'Author E', '36 MB'),
+              child: _buildDocsResultItem(context, const Icon(LineAwesomeIcons.file_powerpoint), 'consulting.ppt', '28/07/21 15:00', 'Author E', '36 MB'),
             ),
           ],
         ),
@@ -100,7 +101,7 @@ class DemoSearchResultDocs extends StatelessWidget {
         headerIconButtons: [
           FUIButtonLinkIcon(
             icon: Icon(
-              LineAwesome.ellipsis_v_solid,
+              LineAwesomeIcons.ellipsis_v_solid,
               size: FUIPanelTheme.headerIconButtonSize,
               color: panelTheme.headerIconButtonColor,
             ),

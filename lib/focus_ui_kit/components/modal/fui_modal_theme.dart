@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:icons_plus/icons_plus.dart';
+import 'package:line_awesome_flutter/line_awesome_flutter.dart';
 
 import '../../exports.dart';
 
@@ -16,7 +16,7 @@ abstract class FUIModalTheme {
   static const double footerSeparatorThickness = 1;
 
   /// Top icon button size
-  static const IconData headerCloseIcon = LineAwesome.times_solid;
+  static const IconData headerCloseIcon = LineAwesomeIcons.times_solid;
   static const double headerIconButtonSize = 16;
 
   /// Paddings

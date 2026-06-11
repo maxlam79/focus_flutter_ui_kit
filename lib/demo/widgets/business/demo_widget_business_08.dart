@@ -2,8 +2,9 @@ import 'dart:math';
 
 import 'package:color_shade/color_shade.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_boxicons/flutter_boxicons.dart';
 import 'package:graphic/graphic.dart';
-import 'package:icons_plus/icons_plus.dart';
+import 'package:line_awesome_flutter/line_awesome_flutter.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
 import '../../../focus_ui_kit/exports.dart';
@@ -53,7 +54,7 @@ class DemoWidgetBusiness08 extends StatelessWidget {
     var mdList = [
       FUIButtonLinkIcon(
         icon: Icon(
-          LineAwesome.external_link_alt_solid,
+          LineAwesomeIcons.external_link_alt_solid,
           size: FUIPanelTheme.headerIconButtonSize,
           color: panelTheme.headerIconButtonColor,
         ),
@@ -61,7 +62,7 @@ class DemoWidgetBusiness08 extends StatelessWidget {
       ),
       FUIButtonLinkIcon(
         icon: Icon(
-          LineAwesome.sync_alt_solid,
+          LineAwesomeIcons.sync_alt_solid,
           size: FUIPanelTheme.headerIconButtonSize,
           color: panelTheme.headerIconButtonColor,
         ),
@@ -73,11 +74,11 @@ class DemoWidgetBusiness08 extends StatelessWidget {
       FUIPopupMenuIconButton(fuiPopupMenuItemList: [
         FUIPopupMenuItem(
           label: Text('Explore'),
-          icon: Icon(LineAwesome.external_link_alt_solid),
+          icon: Icon(LineAwesomeIcons.external_link_alt_solid),
         ),
         FUIPopupMenuItem(
           label: Text('Refresh'),
-          icon: Icon(LineAwesome.sync_alt_solid),
+          icon: Icon(LineAwesomeIcons.sync_alt_solid),
         ),
       ])
     ];
@@ -116,10 +117,10 @@ class DemoWidgetBusiness08 extends StatelessWidget {
       padding: responsiveValue(context, md: EdgeInsets.only(left: 20), sm: EdgeInsets.only(top: 20), xs: EdgeInsets.only(top: 20)),
       child: FUIColumn(
         children: [
-          fieldValue(BoxIcons.bx_sun, 'Peak Days', 'Tue - Thu'),
-          fieldValue(BoxIcons.bx_time, 'Peak Hours', '15:00 - 16:00'),
-          fieldValue(BoxIcons.bx_dollar, 'Highest Transaction Value', '7,584,393'),
-          fieldValue(BoxIcons.bx_chart, 'Highest Transaction Volume', '10,000,392'),
+          fieldValue(Boxicons.bx_sun, 'Peak Days', 'Tue - Thu'),
+          fieldValue(Boxicons.bx_time, 'Peak Hours', '15:00 - 16:00'),
+          fieldValue(Boxicons.bx_dollar, 'Highest Transaction Value', '7,584,393'),
+          fieldValue(Boxicons.bx_chart, 'Highest Transaction Volume', '10,000,392'),
         ],
       ),
     );

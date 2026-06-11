@@ -2,7 +2,7 @@ import 'package:color_shade/color_shade.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_blurhash/flutter_blurhash.dart';
 import 'package:go_router/go_router.dart';
-import 'package:icons_plus/icons_plus.dart';
+import 'package:line_awesome_flutter/line_awesome_flutter.dart';
 import 'package:octo_image/octo_image.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
@@ -140,7 +140,8 @@ class _DemoLogin01State extends State<DemoLogin01> {
             ),
             Align(
                 alignment: Alignment.topRight,
-                child: SmallText(Text('.focus - a UX/UI theme built for Flutter.', style: TextStyle(color: fuiColors.shade2.shade500)))),
+                child: SmallText(Text('.focus - a UX/UI theme built for Flutter.',
+                    style: TextStyle(color: fuiColors.shade2.shade500)))),
           ],
         ),
       ),
@@ -226,7 +227,7 @@ class _DemoLogin01State extends State<DemoLogin01> {
                   tooltip: const Text('Apple'),
                   child: FUIButtonBlockCircleIcon(
                     icon: const Icon(
-                      LineAwesome.apple,
+                      LineAwesomeIcons.apple,
                       color: Colors.white,
                     ),
                     backgroundColor: fuiColors.secondary,
@@ -237,7 +238,7 @@ class _DemoLogin01State extends State<DemoLogin01> {
                   tooltip: const Text('Google'),
                   child: FUIButtonBlockCircleIcon(
                     icon: const Icon(
-                      LineAwesome.google,
+                      LineAwesomeIcons.google,
                       color: Colors.white,
                     ),
                     backgroundColor: const Color(0xffDB4437),
@@ -248,7 +249,7 @@ class _DemoLogin01State extends State<DemoLogin01> {
                   tooltip: const Text('Facebook'),
                   child: FUIButtonBlockCircleIcon(
                     icon: const Icon(
-                      LineAwesome.facebook,
+                      LineAwesomeIcons.facebook,
                       color: Colors.white,
                     ),
                     backgroundColor: const Color(0xff3d5b96),
@@ -259,7 +260,7 @@ class _DemoLogin01State extends State<DemoLogin01> {
                   tooltip: const Text('Github'),
                   child: FUIButtonBlockCircleIcon(
                     icon: const Icon(
-                      LineAwesome.github,
+                      LineAwesomeIcons.github,
                       color: Colors.white,
                     ),
                     backgroundColor: fuiColors.secondary,

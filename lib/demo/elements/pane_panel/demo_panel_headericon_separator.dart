@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:icons_plus/icons_plus.dart';
+import 'package:line_awesome_flutter/line_awesome_flutter.dart';
 
 import '../../../focus_ui_kit/exports.dart';
 
@@ -23,7 +23,7 @@ class DemoPanelHeaderIconWithSeparator extends StatelessWidget {
             headerIconButtons: [
               FUIButtonLinkIcon(
                 icon: Icon(
-                  LineAwesome.external_link_alt_solid,
+                  LineAwesomeIcons.external_link_alt_solid,
                   size: FUIPanelTheme.headerIconButtonSize,
                   color: fuiPanelTheme.headerIconButtonColor,
                 ),
@@ -31,7 +31,7 @@ class DemoPanelHeaderIconWithSeparator extends StatelessWidget {
               ),
               FUIButtonLinkIcon(
                 icon: Icon(
-                  LineAwesome.edit,
+                  LineAwesomeIcons.edit,
                   size: FUIPanelTheme.headerIconButtonSize,
                   color: fuiPanelTheme.headerIconButtonColor,
                 ),
@@ -39,7 +39,7 @@ class DemoPanelHeaderIconWithSeparator extends StatelessWidget {
               ),
               FUIButtonLinkIcon(
                 icon: Icon(
-                  LineAwesome.trash_alt,
+                  LineAwesomeIcons.trash_alt,
                   size: FUIPanelTheme.headerIconButtonSize,
                   color: fuiPanelTheme.headerIconButtonColor,
                 ),

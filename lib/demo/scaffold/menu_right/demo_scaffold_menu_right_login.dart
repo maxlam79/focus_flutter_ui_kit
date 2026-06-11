@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:icons_plus/icons_plus.dart';
+import 'package:flutter_boxicons/flutter_boxicons.dart';
+import 'package:line_awesome_flutter/line_awesome_flutter.dart';
 
 import '../../../focus_ui_kit/exports.dart';
 
@@ -20,7 +21,7 @@ class DemoWidgetScaffoldMenuRightLogin extends StatelessWidget {
       headerIconButtons: [
         FUIButtonLinkIcon(
           icon: Icon(
-            LineAwesome.ellipsis_v_solid,
+            LineAwesomeIcons.ellipsis_v_solid,
             size: FUIPanelTheme.headerIconButtonSize,
             color: panelTheme.headerIconButtonColor,
           ),
@@ -58,7 +59,7 @@ class DemoWidgetScaffoldMenuRightLogin extends StatelessWidget {
         fuiButtonBlockLevel: FUIButtonBlockLevel.full,
         fuiButtonSize: FUIButtonSize.small,
         fuiColorScheme: FUIColorScheme.secondary,
-        icon: Icon(BoxIcons.bx_log_out),
+        icon: Icon(Boxicons.bx_log_out),
         text: Text('Sign Out'),
         onPressed: () {},
       ),

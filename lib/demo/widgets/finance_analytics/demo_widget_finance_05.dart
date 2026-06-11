@@ -1,11 +1,13 @@
 import 'dart:convert';
 
+import 'package:bootstrap_icons/bootstrap_icons.dart';
 import 'package:color_shade/color_shade.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
+import 'package:flutter_boxicons/flutter_boxicons.dart';
 import 'package:graphic/graphic.dart';
-import 'package:icons_plus/icons_plus.dart';
+import 'package:line_awesome_flutter/line_awesome_flutter.dart';
 import 'package:lottie/lottie.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
@@ -54,7 +56,7 @@ class DemoWidgetFinance05 extends StatelessWidget {
     var mdList = [
       FUIButtonLinkIcon(
         icon: Icon(
-          LineAwesome.external_link_alt_solid,
+          LineAwesomeIcons.external_link_alt_solid,
           size: FUIPanelTheme.headerIconButtonSize,
           color: panelTheme.headerIconButtonColor,
         ),
@@ -62,7 +64,7 @@ class DemoWidgetFinance05 extends StatelessWidget {
       ),
       FUIButtonLinkIcon(
         icon: Icon(
-          LineAwesome.sync_alt_solid,
+          LineAwesomeIcons.sync_alt_solid,
           size: FUIPanelTheme.headerIconButtonSize,
           color: panelTheme.headerIconButtonColor,
         ),
@@ -74,11 +76,11 @@ class DemoWidgetFinance05 extends StatelessWidget {
       FUIPopupMenuIconButton(fuiPopupMenuItemList: [
         FUIPopupMenuItem(
           label: Text('Explore'),
-          icon: Icon(LineAwesome.external_link_alt_solid),
+          icon: Icon(LineAwesomeIcons.external_link_alt_solid),
         ),
         FUIPopupMenuItem(
           label: Text('Refresh'),
-          icon: Icon(LineAwesome.sync_alt_solid),
+          icon: Icon(LineAwesomeIcons.sync_alt_solid),
         ),
       ])
     ];
@@ -216,7 +218,7 @@ class DemoWidgetFinance05 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Icon(BoxIcons.bx_pie_chart, size: 60),
+            Icon(Boxicons.bx_pie_chart, size: 60),
             FUISpacer.hSpace20,
             FUIColumn(
               children: [
@@ -261,7 +263,7 @@ class DemoWidgetFinance05 extends StatelessWidget {
             child: Center(
                 child: Padding(
               padding: EdgeInsets.only(top: 3),
-              child: Icon(up ? Bootstrap.caret_up_fill : Bootstrap.caret_down_fill, size: commonFontSize, color: valueTs.color),
+              child: Icon(up ? BootstrapIcons.caret_up_fill : BootstrapIcons.caret_down_fill, size: commonFontSize, color: valueTs.color),
             )),
           ),
           ResponsiveGridCol(

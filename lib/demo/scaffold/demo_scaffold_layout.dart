@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_boxicons/flutter_boxicons.dart';
 import 'package:flutter_slider_drawer/flutter_slider_drawer.dart';
 import 'package:go_router/go_router.dart';
-import 'package:icons_plus/icons_plus.dart';
+import 'package:line_awesome_flutter/line_awesome_flutter.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
 import '../../focus_ui_kit/exports.dart';
@@ -135,7 +136,7 @@ class _DemoScaffoldLayoutState extends State<DemoScaffoldLayout> {
       FUIMenuItem(
         key: menuDashboardKey,
         label: Text('Dashboard'),
-        icon: Icon(LineAwesome.chart_bar),
+        icon: Icon(LineAwesomeIcons.chart_bar),
         selected: true,
         onPressed: () => _goto(DemoPaths.pathDashboard01),
       ),
@@ -146,7 +147,7 @@ class _DemoScaffoldLayoutState extends State<DemoScaffoldLayout> {
       FUIMenuItem(
         key: menuElementsKey,
         label: Text('Basic Elements'),
-        icon: Icon(LineAwesome.stream_solid),
+        icon: Icon(LineAwesomeIcons.stream_solid),
         onPressed: () {},
         fuiSubMenuItems: [
           FUISubMenuItem(
@@ -188,7 +189,7 @@ class _DemoScaffoldLayoutState extends State<DemoScaffoldLayout> {
       FUIMenuItem(
         key: menuFormsKey,
         label: Text('Forms'),
-        icon: Icon(LineAwesome.edit),
+        icon: Icon(LineAwesomeIcons.edit),
         onPressed: () {},
         fuiSubMenuItems: [
           FUISubMenuItem(
@@ -210,7 +211,7 @@ class _DemoScaffoldLayoutState extends State<DemoScaffoldLayout> {
       FUIMenuItem(
         key: menuOthersKey,
         label: Text('Other Components'),
-        icon: Icon(LineAwesome.cubes_solid),
+        icon: Icon(LineAwesomeIcons.cubes_solid),
         onPressed: () {},
         fuiSubMenuItems: [
           FUISubMenuItem(
@@ -242,7 +243,7 @@ class _DemoScaffoldLayoutState extends State<DemoScaffoldLayout> {
       FUIMenuItem(
         key: menuWidgetsKey,
         label: Text('Widgets Catalog'),
-        icon: Icon(LineAwesome.code_solid),
+        icon: Icon(LineAwesomeIcons.code_solid),
         onPressed: () => _goto(DemoPaths.pathWidgetCatalog),
       ),
     );
@@ -252,7 +253,7 @@ class _DemoScaffoldLayoutState extends State<DemoScaffoldLayout> {
       FUIMenuItem(
         key: menuPagesKey,
         label: Text('Pages'),
-        icon: Icon(LineAwesome.pager_solid),
+        icon: Icon(LineAwesomeIcons.pager_solid),
         onPressed: () {},
         fuiSubMenuItems: [
           FUISubMenuItem(
@@ -289,7 +290,7 @@ class _DemoScaffoldLayoutState extends State<DemoScaffoldLayout> {
           children: [
             FUIButtonLinkIcon(
               fuiButtonSize: FUIButtonSize.small,
-              icon: Icon(BoxIcons.bx_menu),
+              icon: Icon(Boxicons.bx_menu),
               onPressed: () => _sliderToggle(),
             ),
             FUISpacer.hSpace20,
@@ -310,13 +311,13 @@ class _DemoScaffoldLayoutState extends State<DemoScaffoldLayout> {
           children: [
             FUIButtonLinkIcon(
               fuiButtonSize: FUIButtonSize.small,
-              icon: Icon(BoxIcons.bx_search),
+              icon: Icon(Boxicons.bx_search),
               onPressed: () => _goto(DemoPaths.pathSearch),
             ),
             FUISpacer.hSpace5,
             FUIButtonLinkIcon(
               fuiButtonSize: FUIButtonSize.small,
-              icon: Icon(BoxIcons.bx_menu_alt_right),
+              icon: Icon(Boxicons.bx_menu_alt_right),
               onPressed: () => _drawerEndOpen(),
             ),
           ],

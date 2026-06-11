@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:icons_plus/icons_plus.dart';
+import 'package:line_awesome_flutter/line_awesome_flutter.dart';
 
 import '../../../focus_ui_kit/exports.dart';
 
@@ -26,11 +26,11 @@ class DemoWidgetSmallInfo05 extends StatelessWidget {
       header: Text('CURRENT ASSET', style: TextStyle(color: textIconColor)),
       headerIconButtons: [
         FUIButtonLinkIcon(
-          icon: Icon(LineAwesome.external_link_alt_solid, color: textIconColor, size: headerIconTextSize),
+          icon: Icon(LineAwesomeIcons.external_link_alt_solid, color: textIconColor, size: headerIconTextSize),
           onPressed: () {},
         ),
         FUIButtonLinkIcon(
-          icon: Icon(LineAwesome.sync_alt_solid, color: textIconColor, size: headerIconTextSize),
+          icon: Icon(LineAwesomeIcons.sync_alt_solid, color: textIconColor, size: headerIconTextSize),
           onPressed: () {},
         ),
       ],
@@ -50,7 +50,7 @@ class DemoWidgetSmallInfo05 extends StatelessWidget {
               alignment: WrapAlignment.spaceBetween,
               crossAxisAlignment: WrapCrossAlignment.center,
               children: [
-                Icon(LineAwesome.stream_solid, size: mainContentIconTextSize, color: textIconColor),
+                Icon(LineAwesomeIcons.stream_solid, size: mainContentIconTextSize, color: textIconColor),
                 Text('49,616M', style: typoTheme.h1.copyWith(color: textIconColor, fontSize: mainContentIconTextSize)),
               ],
             ),

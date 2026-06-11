@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:icons_plus/icons_plus.dart';
+import 'package:line_awesome_flutter/line_awesome_flutter.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
 import '../../../focus_ui_kit/exports.dart';
@@ -188,7 +188,7 @@ class DemoInputStatus extends StatelessWidget {
                     padding: EdgeInsets.only(right: 20),
                     child: FUIInputDate(
                       label: 'Date field with side icon',
-                      sideIcon: Icon(LineAwesome.calendar),
+                      sideIcon: Icon(LineAwesomeIcons.calendar),
                       fuiInputSideIconPosition: FUIInputSideIconPosition.left,
                     ),
                   ),
@@ -200,7 +200,7 @@ class DemoInputStatus extends StatelessWidget {
                     padding: EdgeInsets.only(right: 20),
                     child: FUIInputDate(
                       label: 'Date field with side icon',
-                      sideIcon: Icon(LineAwesome.calendar),
+                      sideIcon: Icon(LineAwesomeIcons.calendar),
                       fuiInputSideIconPosition: FUIInputSideIconPosition.right,
                     ),
                   ),

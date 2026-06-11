@@ -6,8 +6,8 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:graphic/graphic.dart';
-import 'package:icons_plus/icons_plus.dart';
 import 'package:intl/intl.dart';
+import 'package:line_awesome_flutter/line_awesome_flutter.dart';
 import 'package:lottie/lottie.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
@@ -62,7 +62,7 @@ class DemoWidgetFinance06 extends StatelessWidget {
     var mdList = [
       FUIButtonLinkIcon(
         icon: Icon(
-          LineAwesome.external_link_alt_solid,
+          LineAwesomeIcons.external_link_alt_solid,
           size: FUIPanelTheme.headerIconButtonSize,
           color: panelTheme.headerIconButtonColor,
         ),
@@ -70,7 +70,7 @@ class DemoWidgetFinance06 extends StatelessWidget {
       ),
       FUIButtonLinkIcon(
         icon: Icon(
-          LineAwesome.sync_alt_solid,
+          LineAwesomeIcons.sync_alt_solid,
           size: FUIPanelTheme.headerIconButtonSize,
           color: panelTheme.headerIconButtonColor,
         ),
@@ -82,11 +82,11 @@ class DemoWidgetFinance06 extends StatelessWidget {
       FUIPopupMenuIconButton(fuiPopupMenuItemList: [
         FUIPopupMenuItem(
           label: Text('Explore'),
-          icon: Icon(LineAwesome.external_link_alt_solid),
+          icon: Icon(LineAwesomeIcons.external_link_alt_solid),
         ),
         FUIPopupMenuItem(
           label: Text('Refresh'),
-          icon: Icon(LineAwesome.sync_alt_solid),
+          icon: Icon(LineAwesomeIcons.sync_alt_solid),
         ),
       ])
     ];
@@ -122,7 +122,7 @@ class DemoWidgetFinance06 extends StatelessWidget {
           children: [
             Container(
               padding: EdgeInsets.only(bottom: 1),
-              child: Icon(LineAwesome.arrow_alt_circle_up, size: 18, color: fuiColors.statusSuccess.shade600),
+              child: Icon(LineAwesomeIcons.arrow_alt_circle_up, size: 18, color: fuiColors.statusSuccess.shade600),
             ),
             FUISpacer.hSpace5,
             Text('+1.2%', style: typoTheme.regular.copyWith(fontWeight: FontWeight.bold)),

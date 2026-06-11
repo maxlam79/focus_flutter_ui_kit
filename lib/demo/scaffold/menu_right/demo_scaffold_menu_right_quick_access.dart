@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:icons_plus/icons_plus.dart';
+import 'package:flutter_boxicons/flutter_boxicons.dart';
+import 'package:line_awesome_flutter/line_awesome_flutter.dart';
 
 import '../../../focus_ui_kit/exports.dart';
 
 class DemoScaffoldMenuRightQuickAccess extends StatelessWidget with FUIColorMixin {
-   DemoScaffoldMenuRightQuickAccess({super.key});
+  DemoScaffoldMenuRightQuickAccess({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,12 +15,12 @@ class DemoScaffoldMenuRightQuickAccess extends StatelessWidget with FUIColorMixi
     return FUIPanel(
       panelBackgroundColor: fuiColors.shade0,
       height: 330,
-      header:  Text('QUICK ACCESS'),
+      header: Text('QUICK ACCESS'),
       headerSeparator: false,
       headerIconButtons: [
         FUIButtonLinkIcon(
           icon: Icon(
-            LineAwesome.ellipsis_v_solid,
+            LineAwesomeIcons.ellipsis_v_solid,
             size: FUIPanelTheme.headerIconButtonSize,
             color: panelTheme.headerIconButtonColor,
           ),
@@ -34,16 +35,20 @@ class DemoScaffoldMenuRightQuickAccess extends StatelessWidget with FUIColorMixi
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              _buildQuickAccessBox(context, FUIColorScheme.primary,  Icon(BoxIcons.bxs_dashboard),  Text('Dashboard'), () {}),
-              _buildQuickAccessBox(context, FUIColorScheme.secondary,  Icon(BoxIcons.bxl_graphql),  Text('CRM'), () {}),
+              _buildQuickAccessBox(context, FUIColorScheme.primary, Icon(Boxicons.bxs_dashboard),
+                  Text('Dashboard'), () {}),
+              _buildQuickAccessBox(context, FUIColorScheme.secondary, Icon(Boxicons.bxl_graphql),
+                  Text('CRM'), () {}),
             ],
           ),
           FUISpacer.vSpace10,
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              _buildQuickAccessBox(context, FUIColorScheme.opal,  Icon(BoxIcons.bx_transfer_alt),  Text('Transactions'), () {}),
-              _buildQuickAccessBox(context, FUIColorScheme.lightGrey,  Icon(BoxIcons.bx_cog),  Text('Settings'), () {}),
+              _buildQuickAccessBox(context, FUIColorScheme.opal, Icon(Boxicons.bx_transfer_alt),
+                  Text('Transactions'), () {}),
+              _buildQuickAccessBox(context, FUIColorScheme.lightGrey, Icon(Boxicons.bx_cog),
+                  Text('Settings'), () {}),
             ],
           ),
         ],
@@ -62,8 +67,8 @@ class DemoScaffoldMenuRightQuickAccess extends StatelessWidget with FUIColorMixi
     Color backgroundColor = discernColorByScheme(context, fuiColorScheme: fuiColorScheme);
     Color foregroundColor = discernForegroundColorByScheme(context, fuiColorScheme: fuiColorScheme);
 
-     double width = 120, height = 120;
-     double iconSize = 60;
+    double width = 120, height = 120;
+    double iconSize = 60;
 
     return MouseRegion(
       cursor: SystemMouseCursors.click,
@@ -85,7 +90,8 @@ class DemoScaffoldMenuRightQuickAccess extends StatelessWidget with FUIColorMixi
               ),
               FUISpacer.vSpace5,
               DefaultTextStyle(
-                style: typoTheme.regular.copyWith(fontWeight: FontWeight.bold, color: foregroundColor),
+                style:
+                    typoTheme.regular.copyWith(fontWeight: FontWeight.bold, color: foregroundColor),
                 child: label,
               ),
             ],

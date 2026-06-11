@@ -1,5 +1,10 @@
 # Releases
 
+## Version v1.3.0 (Date 11 Jun 2026)
+_** Warning: Breaking changes ahead..._
+- Had issues with the latest Flutter 3.44 where IconData was marked `final` and subclassing is NOT allowed.
+- Replaced `icon_plus` with other icon packages in the `pubspec.yaml`.
+
 ## Version v1.2.0 (Date 9 Apr 2026)
 - Fixed issue [#5](https://github.com/maxlam79/focus_flutter_ui_kit/issues/5);
 - Fixed issue [#2](https://github.com/maxlam79/focus_flutter_ui_kit/issues/2);

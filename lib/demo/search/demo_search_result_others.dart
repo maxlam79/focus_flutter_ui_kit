@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:icons_plus/icons_plus.dart';
+import 'package:flutter_boxicons/flutter_boxicons.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
 import '../../focus_ui_kit/exports.dart';
@@ -29,14 +29,14 @@ class DemoSearchResultOthers extends StatelessWidget {
                 FUIButtonBlockCircleIcon(
                   fuiButtonSize: responsiveValue(context, md: FUIButtonSize.medium, sm: FUIButtonSize.small, xs: FUIButtonSize.small),
                   fuiColorScheme: FUIColorScheme.lightGrey,
-                  icon: const Icon(BoxIcons.bx_list_ul),
+                  icon: const Icon(Boxicons.bx_list_ul),
                   onPressed: () {},
                 ),
                 FUISpacer.hSpace5,
                 FUIButtonBlockCircleIcon(
                   fuiButtonSize: responsiveValue(context, md: FUIButtonSize.medium, sm: FUIButtonSize.small, xs: FUIButtonSize.small),
                   fuiColorScheme: FUIColorScheme.lightGrey,
-                  icon: const Icon(BoxIcons.bx_grid_small),
+                  icon: const Icon(Boxicons.bx_grid_small),
                   onPressed: () {},
                 ),
               ],

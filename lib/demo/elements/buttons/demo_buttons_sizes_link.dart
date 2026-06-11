@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:icons_plus/icons_plus.dart';
+import 'package:line_awesome_flutter/line_awesome_flutter.dart';
 
 import '../../../focus_ui_kit/exports.dart';
 
@@ -15,21 +15,21 @@ class DemoButtonsSizesLink extends StatelessWidget {
           FUISpacer.vSpace20,
           FUIButtonLinkTextIcon(
             text: Text('LARGE'),
-            icon: Icon(LineAwesome.check_double_solid),
+            icon: Icon(LineAwesomeIcons.check_double_solid),
             fuiButtonSize: FUIButtonSize.large,
             onPressed: () {},
           ),
           FUISpacer.vSpace20,
           FUIButtonLinkTextIcon(
             text: Text('Medium (Default)'),
-            icon: Icon(LineAwesome.check_solid),
+            icon: Icon(LineAwesomeIcons.check_solid),
             fuiButtonSize: FUIButtonSize.medium,
             onPressed: () {},
           ),
           FUISpacer.vSpace20,
           FUIButtonLinkTextIcon(
             text: Text('small'),
-            icon: Icon(LineAwesome.check_circle),
+            icon: Icon(LineAwesomeIcons.check_circle),
             fuiButtonSize: FUIButtonSize.small,
             onPressed: () {},
           ),

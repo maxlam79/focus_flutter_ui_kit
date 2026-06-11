@@ -1,6 +1,7 @@
 import 'package:color_shade/color_shade.dart';
 import 'package:flutter/material.dart';
-import 'package:icons_plus/icons_plus.dart';
+import 'package:flutter_boxicons/flutter_boxicons.dart';
+import 'package:line_awesome_flutter/line_awesome_flutter.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
 import '../../../focus_ui_kit/exports.dart';
@@ -35,7 +36,7 @@ class DemoWidgetBusiness03 extends StatelessWidget {
     var mdList = [
       FUIButtonLinkIcon(
         icon: Icon(
-          LineAwesome.external_link_alt_solid,
+          LineAwesomeIcons.external_link_alt_solid,
           size: FUIPanelTheme.headerIconButtonSize,
           color: panelTheme.headerIconButtonColor,
         ),
@@ -43,7 +44,7 @@ class DemoWidgetBusiness03 extends StatelessWidget {
       ),
       FUIButtonLinkIcon(
         icon: Icon(
-          LineAwesome.sync_alt_solid,
+          LineAwesomeIcons.sync_alt_solid,
           size: FUIPanelTheme.headerIconButtonSize,
           color: panelTheme.headerIconButtonColor,
         ),
@@ -55,11 +56,11 @@ class DemoWidgetBusiness03 extends StatelessWidget {
       FUIPopupMenuIconButton(fuiPopupMenuItemList: [
         FUIPopupMenuItem(
           label: Text('Explore'),
-          icon: Icon(LineAwesome.external_link_alt_solid),
+          icon: Icon(LineAwesomeIcons.external_link_alt_solid),
         ),
         FUIPopupMenuItem(
           label: Text('Refresh'),
-          icon: Icon(LineAwesome.sync_alt_solid),
+          icon: Icon(LineAwesomeIcons.sync_alt_solid),
         ),
       ])
     ];
@@ -82,7 +83,7 @@ class DemoWidgetBusiness03 extends StatelessWidget {
                 child: Align(
                   alignment: Alignment.topLeft,
                   child: Icon(
-                    BoxIcons.bxl_typescript,
+                    Boxicons.bxl_typescript,
                     color: fuiColors.textHeading.shade400,
                     size: 40,
                   ),
@@ -135,7 +136,7 @@ class DemoWidgetBusiness03 extends StatelessWidget {
                 child: Align(
                   alignment: Alignment.topLeft,
                   child: Icon(
-                    BoxIcons.bxl_python,
+                    Boxicons.bxl_python,
                     color: fuiColors.textHeading.shade400,
                     size: 40,
                   ),
@@ -189,7 +190,7 @@ class DemoWidgetBusiness03 extends StatelessWidget {
                 child: Align(
                   alignment: Alignment.topLeft,
                   child: Icon(
-                    BoxIcons.bxl_spring_boot,
+                    Boxicons.bxl_spring_boot,
                     color: fuiColors.textHeading.shade400,
                     size: 40,
                   ),

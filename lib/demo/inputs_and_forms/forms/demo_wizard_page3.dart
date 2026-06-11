@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:icons_plus/icons_plus.dart';
+import 'package:line_awesome_flutter/line_awesome_flutter.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 import 'package:select2dot1/select2dot1.dart';
 
@@ -145,7 +145,7 @@ class _DemoWizardPage3State extends State<DemoWizardPage3> {
       child: FUIColumn(
         children: [
           Icon(
-            LineAwesome.truck_solid,
+            LineAwesomeIcons.truck_solid,
             size: 65,
           ),
           FUISpacer.vSpace10,

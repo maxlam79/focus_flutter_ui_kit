@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:icons_plus/icons_plus.dart';
+import 'package:flutter_boxicons/flutter_boxicons.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
 import '../../focus_ui_kit/exports.dart';
@@ -29,7 +29,7 @@ class DemoSearchSidebar extends StatelessWidget {
                 print('Searching for: $searchStr');
               },
               sideIcon: const Icon(
-                BoxIcons.bx_search,
+                Boxicons.bx_search,
               ),
             ),
             FUISpacer.vSpace10,

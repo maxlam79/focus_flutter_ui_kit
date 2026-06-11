@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:icons_plus/icons_plus.dart';
+import 'package:line_awesome_flutter/line_awesome_flutter.dart';
 import 'package:oktoast/oktoast.dart';
 
 import '../../exports.dart';
@@ -19,7 +19,7 @@ class FUIToast2 with FUIToastMixin, FUIColorMixin {
     double sideIconSize = FUIToastTheme.toast12FontSize,
     FUIToastIconPosition? fuiToastIconPosition = FUIToastIconPosition.left,
     EdgeInsets sideIconPadding = FUIToastTheme.toast12SideIconPadding,
-    IconData closeIcon = LineAwesome.times_solid,
+    IconData closeIcon = LineAwesomeIcons.times_solid,
     EdgeInsets closeIconPadding = FUIToastTheme.toast12CloseIconPadding,
     Color? backgroundColor,
     Duration? duration,

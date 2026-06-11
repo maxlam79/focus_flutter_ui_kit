@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:icons_plus/icons_plus.dart';
+import 'package:flutter_boxicons/flutter_boxicons.dart';
+import 'package:line_awesome_flutter/line_awesome_flutter.dart';
 
 import '../../../focus_ui_kit/exports.dart';
 
@@ -55,11 +56,11 @@ class DemoWidgetScaffoldMenuRightLatestUpdates extends StatelessWidget {
                 alignment: WrapAlignment.end,
                 spacing: 2,
                 children: [
-                  FUITooltip(tooltip: Text('Tag'), child: FUIButtonLinkIcon(icon: Icon(BoxIcons.bx_tag, color: fuiColors.shade3, size: 14), onPressed: () {})),
+                  FUITooltip(tooltip: Text('Tag'), child: FUIButtonLinkIcon(icon: Icon(Boxicons.bx_tag, color: fuiColors.shade3, size: 14), onPressed: () {})),
                   FUITooltip(
-                      tooltip: Text('View'), child: FUIButtonLinkIcon(icon: Icon(BoxIcons.bx_comment, color: fuiColors.shade3, size: 14), onPressed: () {})),
+                      tooltip: Text('View'), child: FUIButtonLinkIcon(icon: Icon(Boxicons.bx_comment, color: fuiColors.shade3, size: 14), onPressed: () {})),
                   FUITooltip(
-                      tooltip: Text('Reply'), child: FUIButtonLinkIcon(icon: Icon(BoxIcons.bx_reply, color: fuiColors.shade3, size: 14), onPressed: () {})),
+                      tooltip: Text('Reply'), child: FUIButtonLinkIcon(icon: Icon(Boxicons.bx_reply, color: fuiColors.shade3, size: 14), onPressed: () {})),
                 ],
               ),
             )
@@ -75,7 +76,7 @@ class DemoWidgetScaffoldMenuRightLatestUpdates extends StatelessWidget {
       headerIconButtons: [
         FUIButtonLinkIcon(
           icon: Icon(
-            LineAwesome.ellipsis_v_solid,
+            LineAwesomeIcons.ellipsis_v_solid,
             size: FUIPanelTheme.headerIconButtonSize,
             color: panelTheme.headerIconButtonColor,
           ),
