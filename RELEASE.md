@@ -4,6 +4,7 @@
 _** Warning: Breaking changes ahead..._
 - Had issues with the latest Flutter 3.44 where IconData was marked `final` and subclassing is NOT allowed.
 - Replaced `icon_plus` with other icon packages in the `pubspec.yaml`.
+- Fixed demo page on tabs positioned at bottom right.
 
 ## Version v1.2.0 (Date 9 Apr 2026)
 - Fixed issue [#5](https://github.com/maxlam79/focus_flutter_ui_kit/issues/5);

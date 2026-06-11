@@ -57,7 +57,7 @@ class DemoTabsHead extends StatelessWidget {
                     ResponsiveGridCol(
                       sm: 12,
                       md: 6,
-                      child: _buildContent(context, 'Tab (Header on Right Bottom)', FUITabHeadPosition.leftTop, 0),
+                      child: _buildContent(context, 'Tab (Header on Right Bottom)', FUITabHeadPosition.rightBottom, 0),
                     ),
                   ],
                 ),

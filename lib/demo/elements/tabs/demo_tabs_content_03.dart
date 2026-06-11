@@ -19,60 +19,65 @@ class DemoTabsContent03 extends StatelessWidget {
       {'month': 'Dec', 'value': 233.049, 'highlight': false},
     ];
 
-    return FUISingleChildScrollView(
-      child: FUIColumn(
-        children: [
-          PreH(const Text('Bar Chart')),
-          H5(const Text('US CPI (2013 - Q3 & Q4)')),
-          FUISpacer.vSpace10,
-          Center(
-            child: SizedBox(
-              width: 600,
-              height: 200,
-              child: Chart(
-                rebuild: false,
-                data: chartData,
-                variables: {
-                  'month': Variable(
-                    accessor: (Map map) => map['month'] as String,
-                  ),
-                  'cpi': Variable(
-                    accessor: (Map map) => map['value'] as num,
-                    scale: LinearScale(min: 200, max: 240),
-                  ),
-                },
-                marks: [
-                  IntervalMark(
-                    transition: Transition(duration: const Duration(seconds: 1), curve: Curves.linearToEaseOut),
-                    entrance: {MarkEntrance.y},
-                    label: LabelEncode(encoder: (tuple) => Label(tuple['cpi'].toString())),
-                    tag: (tuple) => tuple['month'].toString(),
-                    color: ColorEncode(
-                      encoder: (tuple) {
-                        var itr = tuple.entries.iterator;
+    return FUIColumn(
+      children: [
+        FUISingleChildScrollView(
+          child: FUIColumn(
+            children: [
+              PreH(const Text('Bar Chart')),
+              H5(const Text('US CPI (2013 - Q3 & Q4)')),
+              FUISpacer.vSpace10,
+              Center(
+                child: SizedBox(
+                  width: 600,
+                  height: 200,
+                  child: Chart(
+                    rebuild: false,
+                    data: chartData,
+                    variables: {
+                      'month': Variable(
+                        accessor: (Map map) => map['month'] as String,
+                      ),
+                      'cpi': Variable(
+                        accessor: (Map map) => map['value'] as num,
+                        scale: LinearScale(min: 200, max: 240),
+                      ),
+                    },
+                    marks: [
+                      IntervalMark(
+                        transition: Transition(
+                            duration: const Duration(seconds: 1), curve: Curves.linearToEaseOut),
+                        entrance: {MarkEntrance.y},
+                        label: LabelEncode(encoder: (tuple) => Label(tuple['cpi'].toString())),
+                        tag: (tuple) => tuple['month'].toString(),
+                        color: ColorEncode(
+                          encoder: (tuple) {
+                            var itr = tuple.entries.iterator;
 
-                        while (itr.moveNext()) {
-                          if (itr.current.key == 'month' && itr.current.value == 'Sep') {
-                            return fuiColors.primary;
-                          } else {
+                            while (itr.moveNext()) {
+                              if (itr.current.key == 'month' && itr.current.value == 'Sep') {
+                                return fuiColors.primary;
+                              } else {
+                                return fuiColors.shade2;
+                              }
+                            }
+
                             return fuiColors.shade2;
-                          }
-                        }
-
-                        return fuiColors.shade2;
-                      },
-                    ),
+                          },
+                        ),
+                      ),
+                    ],
+                    axes: [
+                      Defaults.horizontalAxis,
+                      Defaults.verticalAxis,
+                    ],
                   ),
-                ],
-                axes: [
-                  Defaults.horizontalAxis,
-                  Defaults.verticalAxis,
-                ],
-              ),
-            ),
-          )
-        ],
-      ),
+                ),
+              )
+            ],
+          ),
+        ),
+      ],
     );
   }
 }

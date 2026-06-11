@@ -130,7 +130,7 @@ class _FUITabPaneState extends State<FUITabPane> {
       case FUITabHeadPosition.rightBottom:
         w = Row(
           mainAxisAlignment: MainAxisAlignment.end,
-          crossAxisAlignment: CrossAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.end,
           children: [
             contentSection,
             headSection,
@@ -158,8 +158,12 @@ class _FUITabPaneState extends State<FUITabPane> {
         break;
     }
 
-    double maxWidth = (MediaQuery.of(context).size.width > FUITabTheme.defaultMaxWidth) ? FUITabTheme.defaultMaxWidth : MediaQuery.of(context).size.width;
-    double maxHeight = (MediaQuery.of(context).size.height > FUITabTheme.defaultMaxHeight) ? FUITabTheme.defaultMaxHeight : MediaQuery.of(context).size.height;
+    double maxWidth = (MediaQuery.of(context).size.width > FUITabTheme.defaultMaxWidth)
+        ? FUITabTheme.defaultMaxWidth
+        : MediaQuery.of(context).size.width;
+    double maxHeight = (MediaQuery.of(context).size.height > FUITabTheme.defaultMaxHeight)
+        ? FUITabTheme.defaultMaxHeight
+        : MediaQuery.of(context).size.height;
 
     BoxConstraints? constraints = widget.constraints ??
         ((widget.width == null && widget.height == null)
@@ -377,7 +381,8 @@ class _FUITabContentViewState extends State<_FUITabContentView> {
           preferences: AnimationPreferences(
             duration: widget.contentDisplayAniDuration ?? FUITabTheme.tabContentAniDuration,
             animationStatusListener: (status) {
-              if (status == AnimationStatus.completed && widget.onContentDisplayAniRendered != null) {
+              if (status == AnimationStatus.completed &&
+                  widget.onContentDisplayAniRendered != null) {
                 widget.onContentDisplayAniRendered!(selectedTabItemKey);
               }
             },
